@@ -319,18 +319,18 @@ __cxa_deleted_virtual:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF8:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF0:
 	.string	"unsigned int"
 .LASF9:
 	.string	"size_t"
 .LASF12:
 	.string	"abort"
-.LASF8:
-	.string	"/home/user/Osek/OSEK-Project/erika"
-.LASF10:
-	.string	"__cxa_deleted_virtual"
 .LASF5:
 	.string	"__malloc_heap_end"
+.LASF10:
+	.string	"__cxa_deleted_virtual"
 .LASF2:
 	.string	"__malloc_margin"
 .LASF7:

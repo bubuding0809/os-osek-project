@@ -1603,8 +1603,6 @@ shiftOut:
 	.string	"size_t"
 .LASF17:
 	.string	"__malloc_heap_start"
-.LASF7:
-	.string	"long long int"
 .LASF29:
 	.string	"clockPin"
 .LASF31:
@@ -1614,7 +1612,9 @@ shiftOut:
 .LASF38:
 	.string	"shiftOut"
 .LASF36:
-	.string	"/home/user/Osek/OSEK-Project/erika"
+	.string	"/home/user/git/os-osek-project/erika"
+.LASF7:
+	.string	"long long int"
 .LASF5:
 	.string	"long int"
 .LASF20:

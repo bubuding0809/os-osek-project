@@ -12,7 +12,7 @@ __zero_reg__ = 1
 	.type	osEE_scheduler_core_rq_preempt_stk, @function
 osEE_scheduler_core_rq_preempt_stk:
 .LFB63:
-	.file 1 "/home/user/Osek/OSEK-Project/erika/src/ee_oo_scheduler.c"
+	.file 1 "/home/user/git/os-osek-project/erika/src/ee_oo_scheduler.c"
 	.loc 1 232 0
 	.cfi_startproc
 .LVL0:
@@ -502,14 +502,14 @@ osEE_scheduler_core_pop_running:
 	.text
 .Letext0:
 	.file 2 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 3 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 4 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 8 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
-	.file 9 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h"
-	.file 10 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
+	.file 3 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 4 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 8 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
+	.file 9 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h"
+	.file 10 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0x135f
@@ -4644,8 +4644,6 @@ osEE_scheduler_core_pop_running:
 	.string	"OsEE_CDB_tag"
 .LASF80:
 	.string	"p_param"
-.LASF333:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF34:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF256:
@@ -4868,8 +4866,8 @@ osEE_scheduler_core_pop_running:
 	.string	"p_tdb"
 .LASF70:
 	.string	"E_OS_INTERFERENCE_DEADLOCK"
-.LASF332:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_oo_scheduler.c"
+.LASF178:
+	.string	"OsEE_kernel_cb"
 .LASF53:
 	.string	"E_OS_LIMIT"
 .LASF284:
@@ -4938,8 +4936,6 @@ osEE_scheduler_core_pop_running:
 	.string	"long long int"
 .LASF48:
 	.string	"OsEE_status_type_tag"
-.LASF178:
-	.string	"OsEE_kernel_cb"
 .LASF130:
 	.string	"OSServiceId_IncrementCounter_Entry"
 .LASF192:
@@ -5058,6 +5054,8 @@ osEE_scheduler_core_pop_running:
 	.string	"OsEE_CounterDB"
 .LASF235:
 	.string	"OsEE_action_tag"
+.LASF333:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF265:
 	.string	"service_id"
 .LASF101:
@@ -5148,6 +5146,8 @@ osEE_scheduler_core_pop_running:
 	.string	"osEE_scheduler_stk_next"
 .LASF283:
 	.string	"p_autostart_trigger_array"
+.LASF332:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_oo_scheduler.c"
 .LASF59:
 	.string	"E_OS_ILLEGAL_ADDRESS"
 .LASF61:

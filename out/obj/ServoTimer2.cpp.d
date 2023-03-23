@@ -1,4 +1,4 @@
-obj/ServoTimer2.cpp.o: /home/user/Osek/OSEK-Project/ServoTimer2.cpp \
+obj/ServoTimer2.cpp.o: /home/user/git/os-osek-project/ServoTimer2.cpp \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Arduino.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/binary.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/WCharacter.h \
@@ -10,7 +10,7 @@ obj/ServoTimer2.cpp.o: /home/user/Osek/OSEK-Project/ServoTimer2.cpp \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Arduino.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /home/user/Osek/OSEK-Project/ServoTimer2.h
+ /home/user/git/os-osek-project/ServoTimer2.h
 
 /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Arduino.h:
 
@@ -34,4 +34,4 @@ obj/ServoTimer2.cpp.o: /home/user/Osek/OSEK-Project/ServoTimer2.cpp \
 
 /home/user/arduino-1.8.15/hardware/arduino/avr/variants/standard/pins_arduino.h:
 
-/home/user/Osek/OSEK-Project/ServoTimer2.h:
+/home/user/git/os-osek-project/ServoTimer2.h:

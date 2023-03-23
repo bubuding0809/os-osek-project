@@ -14,7 +14,7 @@ KDB:
 	.word	tdb_ptr_array
 	.word	sn_array
 	.word	8
-	.word	7
+	.word	9
 	.word	res_db_ptr_array
 	.word	1
 	.word	counter_db_ptr_array
@@ -71,13 +71,13 @@ osEE_autostart_trigger_db:
 trigger_autostart_info_OSDEFAULTAPPMODE:
 	.word	alarm_db_array
 	.word	1
-	.word	500
+	.word	1000
 	.word	alarm_db_array+14
 	.word	1
-	.word	500
+	.word	100
 	.word	alarm_db_array+28
 	.word	1
-	.word	1000
+	.word	100
 .global	alarm_db_ptr_array
 	.section	.rodata.alarm_db_ptr_array,"a",@progbits
 	.type	alarm_db_ptr_array, @object
@@ -162,7 +162,7 @@ res_db_array:
 .global	sn_array
 	.section	.data.sn_array,"aw",@progbits
 	.type	sn_array, @object
-	.size	sn_array, 28
+	.size	sn_array, 36
 sn_array:
 	.word	sn_array+4
 	.word	0
@@ -175,6 +175,10 @@ sn_array:
 	.word	sn_array+20
 	.word	0
 	.word	sn_array+24
+	.word	0
+	.word	sn_array+28
+	.word	0
+	.word	sn_array+32
 	.word	0
 	.word	0
 	.word	0
@@ -213,7 +217,7 @@ tdb_array:
 	.word	gs(FuncDetectTask)
 	.byte	1
 	.byte	1
-	.byte	1
+	.byte	2
 	.word	sdb_array+4
 	.word	scb_array+2
 	.word	tcb_array+20
@@ -222,7 +226,7 @@ tdb_array:
 	.word	gs(FuncDisplayTask)
 	.byte	1
 	.byte	1
-	.byte	1
+	.byte	2
 	.word	sdb_array+4
 	.word	scb_array+2
 	.word	tcb_array+30

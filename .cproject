@@ -33,6 +33,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/OSEK-4/out}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/OSEK-Project/erika/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/OSEK-Project/out}&quot;"/>
+									<listOptionValue builtIn="false" value="/home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino"/>
+									<listOptionValue builtIn="false" value="/home/user/arduino-1.8.15/hardware/arduino/avr/variants/standard"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1742402710" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -53,6 +55,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/OSEK-4/out}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/OSEK-Project/erika/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/OSEK-Project/out}&quot;"/>
+									<listOptionValue builtIn="false" value="/home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino"/>
+									<listOptionValue builtIn="false" value="/home/user/arduino-1.8.15/hardware/arduino/avr/variants/standard"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.545086427" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>

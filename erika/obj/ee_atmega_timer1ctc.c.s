@@ -12,7 +12,7 @@ __zero_reg__ = 1
 	.type	OsEE_atmega_startTimer1, @function
 OsEE_atmega_startTimer1:
 .LFB61:
-	.file 1 "/home/user/Osek/OSEK-Project/erika/src/ee_atmega_timer1ctc.c"
+	.file 1 "/home/user/git/os-osek-project/erika/src/ee_atmega_timer1ctc.c"
 	.loc 1 67 0
 	.cfi_startproc
 .LVL0:
@@ -164,12 +164,12 @@ OsEE_atmega_startTimer1:
 	.text
 .Letext0:
 	.file 2 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 3 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 4 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 8 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
+	.file 3 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 4 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 8 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0xfb7
@@ -2853,8 +2853,6 @@ OsEE_atmega_startTimer1:
 	.string	"OsEE_CDB_tag"
 .LASF81:
 	.string	"p_param"
-.LASF305:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF35:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF257:
@@ -2963,8 +2961,6 @@ OsEE_atmega_startTimer1:
 	.string	"OSServiceId_GetEvent"
 .LASF151:
 	.string	"OsEE_service_id_type"
-.LASF304:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_atmega_timer1ctc.c"
 .LASF29:
 	.string	"OsEE_task_type"
 .LASF174:
@@ -3241,6 +3237,8 @@ OsEE_atmega_startTimer1:
 	.string	"OsEE_CounterDB"
 .LASF236:
 	.string	"OsEE_action_tag"
+.LASF305:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF266:
 	.string	"service_id"
 .LASF102:
@@ -3327,6 +3325,8 @@ OsEE_atmega_startTimer1:
 	.string	"OSEE_KERNEL_CTX"
 .LASF149:
 	.string	"OSId_Kernel_Entry"
+.LASF304:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_atmega_timer1ctc.c"
 .LASF75:
 	.string	"E_OS_SYS_TASK"
 .LASF300:

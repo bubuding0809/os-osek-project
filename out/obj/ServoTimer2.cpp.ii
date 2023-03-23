@@ -1,7 +1,7 @@
-# 1 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 1 "/home/user/git/os-osek-project/ServoTimer2.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 1 "/home/user/git/os-osek-project/ServoTimer2.cpp"
 extern "C" {
 
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/inttypes.h" 1 3
@@ -127,7 +127,7 @@ typedef int32_t int_farptr_t;
 
 
 typedef uint32_t uint_farptr_t;
-# 4 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 2
+# 4 "/home/user/git/os-osek-project/ServoTimer2.cpp" 2
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/interrupt.h" 1 3
 # 38 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/interrupt.h" 3
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/io.h" 1 3
@@ -166,10 +166,10 @@ typedef struct
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/lock.h" 1 3
 # 730 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/io.h" 2 3
 # 39 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/interrupt.h" 2 3
-# 5 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 2
+# 5 "/home/user/git/os-osek-project/ServoTimer2.cpp" 2
 
 
-# 6 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 6 "/home/user/git/os-osek-project/ServoTimer2.cpp"
 }
 # 1 "/home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Arduino.h" 1
 # 23 "/home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Arduino.h"
@@ -2136,9 +2136,9 @@ static const uint8_t A5 = (19);
 static const uint8_t A6 = (20);
 static const uint8_t A7 = (21);
 # 259 "/home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Arduino.h" 2
-# 8 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 2
-# 1 "/home/user/Osek/OSEK-Project/ServoTimer2.h" 1
-# 89 "/home/user/Osek/OSEK-Project/ServoTimer2.h"
+# 8 "/home/user/git/os-osek-project/ServoTimer2.cpp" 2
+# 1 "/home/user/git/os-osek-project/ServoTimer2.h" 1
+# 89 "/home/user/git/os-osek-project/ServoTimer2.h"
 typedef struct {
 
       uint8_t nbr :5 ;
@@ -2196,7 +2196,7 @@ class ServoArrayT2
   uint8_t chanIndex;
 
 };
-# 9 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 2
+# 9 "/home/user/git/os-osek-project/ServoTimer2.cpp" 2
 static void initISR();
 static void writeChan(uint8_t chan, int pulsewidth);
 
@@ -2213,18 +2213,18 @@ uint8_t ChannelCount = 0;
 static boolean isStarted = false;
 
 
-# 24 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 24 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 extern "C" void __vector_9 (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_9 (void)
 
-# 25 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 25 "/home/user/git/os-osek-project/ServoTimer2.cpp"
 {
   ++ISRCount;
   if (ISRCount == servos[Channel].counter )
   {
  
-# 29 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 29 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)(0xB2)) 
-# 29 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 29 "/home/user/git/os-osek-project/ServoTimer2.cpp"
       = servos[Channel].remainder;
   }
   else if(ISRCount > servos[Channel].counter)
@@ -2236,9 +2236,9 @@ extern "C" void __vector_9 (void) __attribute__ ((signal,used, externally_visibl
    Channel++;
  ISRCount = 0;
  
-# 39 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 39 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)(0xB2)) 
-# 39 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 39 "/home/user/git/os-osek-project/ServoTimer2.cpp"
       = 0;
  if( (Channel != 0) && (Channel <= 8) ){
      if(servos[Channel].Pin.isActive == true)
@@ -2325,46 +2325,46 @@ static void initISR()
 
 
  
-# 124 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 124 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)(0x70)) 
-# 124 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 124 "/home/user/git/os-osek-project/ServoTimer2.cpp"
        = 0;
  
-# 125 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 125 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)(0xB0)) 
-# 125 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 125 "/home/user/git/os-osek-project/ServoTimer2.cpp"
        = 0;
  
-# 126 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 126 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)(0xB1)) 
-# 126 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 126 "/home/user/git/os-osek-project/ServoTimer2.cpp"
        = 
-# 126 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 126 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
          (1 << (1))
-# 126 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 126 "/home/user/git/os-osek-project/ServoTimer2.cpp"
                   ;
  
-# 127 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 127 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)(0xB2)) 
-# 127 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 127 "/home/user/git/os-osek-project/ServoTimer2.cpp"
       = 0;
  
-# 128 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 128 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)((0x17) + 0x20)) 
-# 128 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 128 "/home/user/git/os-osek-project/ServoTimer2.cpp"
       = 
-# 128 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 128 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
         (1 << (0))
-# 128 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 128 "/home/user/git/os-osek-project/ServoTimer2.cpp"
                  ;
  
-# 129 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 129 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
 (*(volatile uint8_t *)(0x70)) 
-# 129 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 129 "/home/user/git/os-osek-project/ServoTimer2.cpp"
        = 
-# 129 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp" 3
+# 129 "/home/user/git/os-osek-project/ServoTimer2.cpp" 3
           (1 << (0)) 
-# 129 "/home/user/Osek/OSEK-Project/ServoTimer2.cpp"
+# 129 "/home/user/git/os-osek-project/ServoTimer2.cpp"
                      ;
 
  isStarted = true;

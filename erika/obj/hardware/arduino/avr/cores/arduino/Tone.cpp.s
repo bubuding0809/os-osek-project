@@ -4724,10 +4724,10 @@ timer0_toggle_count:
 	.string	"long long unsigned int"
 .LASF33:
 	.string	"HardwareSerial"
+.LASF65:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF56:
 	.string	"frequency"
-.LASF65:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF9:
 	.string	"long long int"
 .LASF1:

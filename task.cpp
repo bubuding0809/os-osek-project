@@ -95,10 +95,15 @@ ServoTimer2 westServo;
 LiquidCrystal lcd(RS, EN, D4, D5, D6,
                   D7); // LCD - Construct lcd object, pins see hw_pins.h
 
-int dataRaw[2] = {0, 0};
-float dataLux[2] = {0, 0};
+int dataRawEast[3] = {-2000, -2000, -2000};
+int dataRawWest[3] = {-2000,-2000,-2000};
+float dataLuxEast[3] = {0,0, 0};
+float dataLuxWest[3] = {0,0, 0};
+float avgEast = 0;
+float avgWest = 0;
 bool eastContracted = false;
 bool westContracted = false;
+int countEast = 0, countWest =0;
 
 // 24Hr clock
 int hour = 6;
@@ -146,13 +151,45 @@ TASK(DetectTask) {
   float ldrVoltage;
   float ldrResistance;
 
-  // read in LDR voltage from analog pins for East and West
-  dataRaw[0] = analogRead(EASTDETECT); // East analog
-  dataRaw[1] = analogRead(WESTDETECT); // West
 
-  // Convert raw data to LUX data
-  dataLux[0] = getLux(dataRaw[0]); // East digital
-  dataLux[1] = getLux(dataRaw[1]); // West digital
+  // read in LDR voltage from analog pins for East and West
+  // Convert raw data to lux
+  if (countEast<=3) {
+	  Serial.print("East RAW data:");
+	  Serial.println(dataRawEast[countEast]);
+	  dataRawEast[countEast] = analogRead(EASTDETECT); // East analog
+	  dataLuxEast[countEast] = getLux(dataRawEast[countEast]); // East digital
+	  Serial.print("East data:");
+	  Serial.println(dataLuxEast[countEast]);
+	  countEast++;
+  }
+  // Convert raw data to lux
+  if (countWest <= 3) {
+	  Serial.print("West RAW data:");
+	  Serial.println(dataRawWest[countWest]);
+	  dataRawWest[countWest] = analogRead(WESTDETECT); // West analog
+
+	  dataLuxWest[countWest] = getLux(dataRawWest[countWest]); // West digital
+	  Serial.print("West data:");
+	  Serial.println(dataLuxWest[countWest]);
+	  countWest++;
+  }
+
+
+  avgEast = (dataLuxEast[0]+dataLuxEast[1]+dataLuxEast[2])/3;
+  Serial.print("Avg east lux: ");
+  Serial.println(avgEast);
+  avgWest = (dataLuxWest[0]+dataLuxWest[1]+dataLuxWest[2])/3;
+  Serial.print("Avg west lux: ");
+  Serial.println(avgWest);
+
+  if (countEast == 3){
+	  countEast = 0;
+  }
+
+  if (countWest == 3){
+ 	  countWest = 0;
+   }
 
   // Street light operation based on clock time during the night
   if ((hour >= 18 && minute >= 30) || (hour <= 6 && minute < 30)) {
@@ -166,13 +203,13 @@ TASK(DetectTask) {
 
   } else if (hour >= 6 && minute >= 30) {
     // Normal street light operation based on LUX data
-    if (dataLux[0] <= 200) { // East
+    if (avgEast <= 200) { // East
       digitalWrite(EASTLIGHT, HIGH);
     } else {
       digitalWrite(EASTLIGHT, LOW);
     }
     // West
-    if (dataLux[1] <= 200) { // West
+    if (avgWest <= 200) { // West
       digitalWrite(WESTLIGHT, HIGH);
     } else {
       digitalWrite(WESTLIGHT, LOW);
@@ -180,18 +217,18 @@ TASK(DetectTask) {
   }
 
   // Shade operation
-  if (dataLux[0] < 500 && !eastContracted) {
+  if (avgEast < 500 && !eastContracted) {
 //    ActivateTask(ToggleEastServoTask);
 	  SetEvent(ToggleServoTask, EastServoEvent);
-  } else if (dataLux[0] >= 500 && eastContracted) {
+  } else if (avgEast >= 500 && eastContracted) {
 //	  ActivateTask(ToggleEastServoTask);
 	  SetEvent(ToggleServoTask, EastServoEvent);
   }
 
-  if (dataLux[1] < 500 && !westContracted) {
+  if (avgWest < 500 && !westContracted) {
 //    ActivateTask(ToggleWestServoTask);
 	  SetEvent(ToggleServoTask, WestServoEvent);
-  } else if (dataLux[1] >= 500 && westContracted) {
+  } else if (avgWest >= 500 && westContracted) {
 //    ActivateTask(ToggleWestServoTask);
 	  SetEvent(ToggleServoTask, WestServoEvent);
   }
@@ -318,9 +355,9 @@ TASK(DisplayTask) {
 
   // 1. Paint lux data of East, West and average to LCD row 1
   lcd.setCursor(0, 0);
-  float averageLux = (dataLux[0] + dataLux[1]) / 2;
-  sprintf(msg, "LUX : %3dW %3dA %3dE", (int)dataLux[1], (int)averageLux,
-          (int)dataLux[0]);
+  float averageLux = (avgEast + avgWest) / 2;
+  sprintf(msg, "LUX : %3dW %3dA %3dE", (int)avgWest, (int)averageLux,
+          (int)avgEast);
   lcd.print(msg);
 
   // 2. Paint shade on/off data of East, West to LCD row 2

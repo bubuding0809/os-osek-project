@@ -12,7 +12,7 @@ __zero_reg__ = 1
 	.type	osEE_avr8_WriteCCPReg, @function
 osEE_avr8_WriteCCPReg:
 .LFB61:
-	.file 1 "/home/user/Osek/OSEK-Project/erika/src/ee_avr8_utils.c"
+	.file 1 "/home/user/git/os-osek-project/erika/src/ee_avr8_utils.c"
 	.loc 1 73 0
 	.cfi_startproc
 .LVL0:
@@ -27,7 +27,7 @@ osEE_avr8_WriteCCPReg:
 .LVL1:
 	.loc 1 87 0
 /* #APP */
- ;  87 "/home/user/Osek/OSEK-Project/erika/src/ee_avr8_utils.c" 1
+ ;  87 "/home/user/git/os-osek-project/erika/src/ee_avr8_utils.c" 1
 	movw r30,  r24
 	ldi  r16,  216
 	out   52, r16
@@ -45,12 +45,12 @@ osEE_avr8_WriteCCPReg:
 	.text
 .Letext0:
 	.file 2 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 3 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 4 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 8 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
+	.file 3 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 4 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 8 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0xfbf
@@ -2576,8 +2576,6 @@ osEE_avr8_WriteCCPReg:
 	.string	"OsEE_CDB_tag"
 .LASF80:
 	.string	"p_param"
-.LASF303:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF34:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF256:
@@ -2958,10 +2956,12 @@ osEE_avr8_WriteCCPReg:
 	.string	"long int"
 .LASF211:
 	.string	"wait_mask"
-.LASF227:
-	.string	"OsEE_CounterDB"
+.LASF302:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_avr8_utils.c"
 .LASF235:
 	.string	"OsEE_action_tag"
+.LASF303:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF265:
 	.string	"service_id"
 .LASF101:
@@ -3062,8 +3062,6 @@ osEE_avr8_WriteCCPReg:
 	.string	"OSServiceId_SetAbsAlarm"
 .LASF50:
 	.string	"E_OS_ACCESS"
-.LASF302:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_avr8_utils.c"
 .LASF38:
 	.string	"OsEE_task_status"
 .LASF56:
@@ -3106,6 +3104,8 @@ osEE_avr8_WriteCCPReg:
 	.string	"signed char"
 .LASF258:
 	.string	"OsEE_CCB_tag"
+.LASF227:
+	.string	"OsEE_CounterDB"
 .LASF195:
 	.string	"OSEE_KERNEL_STARTED"
 .LASF210:

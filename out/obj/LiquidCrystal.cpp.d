@@ -1,5 +1,5 @@
-obj/LiquidCrystal.cpp.o: /home/user/Osek/OSEK-Project/LiquidCrystal.cpp \
- /home/user/Osek/OSEK-Project/LiquidCrystal.h \
+obj/LiquidCrystal.cpp.o: /home/user/git/os-osek-project/LiquidCrystal.cpp \
+ /home/user/git/os-osek-project/LiquidCrystal.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Print.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/WString.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Printable.h \
@@ -13,7 +13,7 @@ obj/LiquidCrystal.cpp.o: /home/user/Osek/OSEK-Project/LiquidCrystal.cpp \
  /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Arduino.h \
  /home/user/arduino-1.8.15/hardware/arduino/avr/variants/standard/pins_arduino.h
 
-/home/user/Osek/OSEK-Project/LiquidCrystal.h:
+/home/user/git/os-osek-project/LiquidCrystal.h:
 
 /home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/Print.h:
 

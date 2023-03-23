@@ -5051,8 +5051,8 @@ Serial:
 	.string	"HardwareSerial"
 .LASF165:
 	.string	"_ZN15StringSumHelperC4ERK6String"
-.LASF39:
-	.string	"~String"
+.LASF276:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF277:
 	.string	"StringIfHelperType"
 .LASF23:
@@ -5061,8 +5061,8 @@ Serial:
 	.string	"_ZNK6String11lastIndexOfEcj"
 .LASF162:
 	.string	"move"
-.LASF276:
-	.string	"/home/user/Osek/OSEK-Project/erika"
+.LASF212:
+	.string	"_ZN6Stream4findEPcj"
 .LASF194:
 	.string	"timedPeek"
 .LASF12:
@@ -5071,8 +5071,6 @@ Serial:
 	.string	"signed char"
 .LASF274:
 	.string	"GNU C++11 7.3.0 -mn-flash=1 -mmcu=avr5 -g -Os -std=gnu++11 -ffunction-sections -fdata-sections -fno-threadsafe-statics -mn-flash=1 -mno-skip-bug -fno-rtti -fno-enforce-eh-specs -fno-exceptions"
-.LASF212:
-	.string	"_ZN6Stream4findEPcj"
 .LASF97:
 	.string	"_ZNK6String16equalsIgnoreCaseERKS_"
 .LASF87:
@@ -5391,6 +5389,8 @@ Serial:
 	.string	"_ZN6Stream9findUntilEPhPc"
 .LASF139:
 	.string	"_ZN6String6removeEjj"
+.LASF39:
+	.string	"~String"
 .LASF188:
 	.string	"Stream"
 .LASF200:

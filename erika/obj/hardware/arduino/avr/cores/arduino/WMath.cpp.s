@@ -1397,8 +1397,8 @@ _Z8makeWordhh:
 	.string	"__malloc_heap_end"
 .LASF14:
 	.string	"random"
-.LASF20:
-	.string	"long unsigned int"
+.LASF27:
+	.string	"diff"
 .LASF12:
 	.string	"out_min"
 .LASF10:
@@ -1423,6 +1423,8 @@ _Z8makeWordhh:
 	.string	"seed"
 .LASF9:
 	.string	"_Z8makeWordj"
+.LASF20:
+	.string	"long unsigned int"
 .LASF8:
 	.string	"_Z8makeWordhh"
 .LASF11:
@@ -1431,14 +1433,12 @@ _Z8makeWordhh:
 	.string	"randomSeed"
 .LASF29:
 	.string	"_Z10randomSeedm"
-.LASF24:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF2:
 	.string	"__malloc_margin"
 .LASF0:
 	.string	"unsigned int"
-.LASF27:
-	.string	"diff"
+.LASF24:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF15:
 	.string	"_Z6randomll"
 .LASF16:

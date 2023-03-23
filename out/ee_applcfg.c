@@ -191,7 +191,7 @@ VAR(OsEE_TDB, OS_CONST)
     /* .task_func      = */ TASK_FUNC(DetectTask),
     /* .ready_prio     = */ 1U,
     /* .dispatch_prio  = */ 1U,
-    /* .max_num_of_act = */ 1U},
+    /* .max_num_of_act = */ 2U},
   {
     /* .hdb = */ {
       /* .p_sdb    = */  &sdb_array[1U],
@@ -203,7 +203,7 @@ VAR(OsEE_TDB, OS_CONST)
     /* .task_func      = */ TASK_FUNC(DisplayTask),
     /* .ready_prio     = */ 1U,
     /* .dispatch_prio  = */ 1U,
-    /* .max_num_of_act = */ 1U},
+    /* .max_num_of_act = */ 2U},
   {
     /* .hdb = */ {
       /* .p_sdb    = */  &sdb_array[1U],
@@ -307,6 +307,16 @@ VAR(OsEE_SN, OS_VAR_INIT)  sn_array[OSEE_SN_ARRAY_SIZE] = {
 ,
   {
     /* .p_next = */ &sn_array[6U],
+    /* .p_tdb  = */ NULL
+  }
+,
+  {
+    /* .p_next = */ &sn_array[7U],
+    /* .p_tdb  = */ NULL
+  }
+,
+  {
+    /* .p_next = */ &sn_array[8U],
     /* .p_tdb  = */ NULL
   }
 ,
@@ -445,17 +455,17 @@ VAR(OsEE_autostart_trigger_info, OS_CONST)
   {
     /* p_trigger_db = */  &alarm_db_array[0U],
     /* increment    = */  (1U),
-    /* cycle        = */  (500U)
+    /* cycle        = */  (1000U)
   },
   {
     /* p_trigger_db = */  &alarm_db_array[1U],
     /* increment    = */  (1U),
-    /* cycle        = */  (500U)
+    /* cycle        = */  (100U)
   },
   {
     /* p_trigger_db = */  &alarm_db_array[2U],
     /* increment    = */  (1U),
-    /* cycle        = */  (1000U)
+    /* cycle        = */  (100U)
   }
 };
 

@@ -12,7 +12,7 @@ __zero_reg__ = 1
 	.type	osEE_change_context_from_running, @function
 osEE_change_context_from_running:
 .LFB61:
-	.file 1 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.c"
+	.file 1 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.c"
 	.loc 1 61 0
 	.cfi_startproc
 .LVL0:
@@ -172,13 +172,13 @@ osEE_idle_task_terminate:
 	.text
 .Letext0:
 	.file 2 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 3 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 4 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 8 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
-	.file 9 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h"
+	.file 3 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 4 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 8 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
+	.file 9 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0x1146
@@ -3321,8 +3321,6 @@ osEE_idle_task_terminate:
 	.string	"OsEE_CDB_tag"
 .LASF80:
 	.string	"p_param"
-.LASF315:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF34:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF311:
@@ -3453,12 +3451,12 @@ osEE_idle_task_terminate:
 	.string	"TaskType"
 .LASF47:
 	.string	"MemSize"
-.LASF89:
-	.string	"OSServiceId_Schedule"
 .LASF162:
 	.string	"OsEE_HDB_tag"
 .LASF224:
 	.string	"OsEE_CounterDB_tag"
+.LASF314:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_std_change_context.c"
 .LASF137:
 	.string	"OSServiceId_ShutdownOS"
 .LASF225:
@@ -3715,6 +3713,8 @@ osEE_idle_task_terminate:
 	.string	"OsEE_CounterDB"
 .LASF235:
 	.string	"OsEE_action_tag"
+.LASF315:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF265:
 	.string	"service_id"
 .LASF101:
@@ -3775,8 +3775,8 @@ osEE_idle_task_terminate:
 	.string	"OSEE_TASK_RUNNING"
 .LASF264:
 	.string	"last_error"
-.LASF314:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.c"
+.LASF89:
+	.string	"OSServiceId_Schedule"
 .LASF136:
 	.string	"OSServiceId_GetActiveApplicationMode_Entry"
 .LASF232:

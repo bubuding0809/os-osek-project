@@ -1905,14 +1905,14 @@ timer0_overflow_count:
 	.string	"size_t"
 .LASF18:
 	.string	"__malloc_heap_start"
-.LASF8:
-	.string	"long long int"
 .LASF33:
 	.string	"delay"
 .LASF2:
 	.string	"uint8_t"
 .LASF41:
-	.string	"/home/user/Osek/OSEK-Project/erika"
+	.string	"/home/user/git/os-osek-project/erika"
+.LASF8:
+	.string	"long long int"
 .LASF5:
 	.string	"long int"
 .LASF37:

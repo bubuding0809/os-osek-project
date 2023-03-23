@@ -12,7 +12,7 @@ __zero_reg__ = 1
 	.type	osEE_scheduler_task_end, @function
 osEE_scheduler_task_end:
 .LFB62:
-	.file 1 "/home/user/Osek/OSEK-Project/erika/src/ee_oo_sched_entry_points.c"
+	.file 1 "/home/user/git/os-osek-project/erika/src/ee_oo_sched_entry_points.c"
 	.loc 1 74 0
 	.cfi_startproc
 	push r28
@@ -46,7 +46,7 @@ osEE_scheduler_task_end:
 .LVL0:
 .LBB51:
 .LBB52:
-	.file 2 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h"
+	.file 2 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h"
 	.loc 2 185 0
 	movw r22,r24
 	ldd r24,Y+1
@@ -142,7 +142,7 @@ osEE_scheduler_task_wrapper_run:
 .LBB67:
 	.loc 2 105 0
 /* #APP */
- ;  105 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 1
+ ;  105 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 1
 	sei
  ;  0 "" 2
 .LVL10:
@@ -167,7 +167,7 @@ osEE_scheduler_task_wrapper_run:
 .LBB75:
 	.loc 2 100 0
 /* #APP */
- ;  100 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 1
+ ;  100 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 1
 	cli
  ;  0 "" 2
 .LVL12:
@@ -180,7 +180,7 @@ osEE_scheduler_task_wrapper_run:
 .LBE70:
 .LBB76:
 .LBB77:
-	.file 3 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h"
+	.file 3 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h"
 	.loc 3 136 0
 	ldi r22,lo8(gs(osEE_scheduler_task_end))
 	ldi r23,hi8(gs(osEE_scheduler_task_end))
@@ -233,7 +233,7 @@ osEE_idle_hook_wrapper:
 .LBB83:
 	.loc 2 100 0
 /* #APP */
- ;  100 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 1
+ ;  100 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 1
 	cli
  ;  0 "" 2
 .LVL15:
@@ -308,14 +308,14 @@ osEE_idle_hook_wrapper:
 	.text
 .Letext0:
 	.file 4 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 8 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-	.file 9 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 10 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
-	.file 11 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
-	.file 12 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 8 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+	.file 9 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 10 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
+	.file 11 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
+	.file 12 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0x13c8
@@ -3847,8 +3847,6 @@ osEE_idle_hook_wrapper:
 	.string	"OsEE_CDB_tag"
 .LASF80:
 	.string	"p_param"
-.LASF334:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF34:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF322:
@@ -3931,6 +3929,8 @@ osEE_idle_hook_wrapper:
 	.string	"OSServiceId_GetAlarmBase_Entry"
 .LASF18:
 	.string	"OsEE_event_mask"
+.LASF333:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_oo_sched_entry_points.c"
 .LASF42:
 	.string	"ticksperbase"
 .LASF85:
@@ -4271,12 +4271,12 @@ osEE_idle_hook_wrapper:
 	.string	"long int"
 .LASF211:
 	.string	"wait_mask"
-.LASF333:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_oo_sched_entry_points.c"
 .LASF227:
 	.string	"OsEE_CounterDB"
 .LASF235:
 	.string	"OsEE_action_tag"
+.LASF334:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF265:
 	.string	"service_id"
 .LASF101:

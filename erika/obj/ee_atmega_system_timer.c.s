@@ -12,7 +12,7 @@ __zero_reg__ = 1
 	.type	osEE_avr8_system_timer_init, @function
 osEE_avr8_system_timer_init:
 .LFB61:
-	.file 1 "/home/user/Osek/OSEK-Project/erika/src/ee_atmega_system_timer.c"
+	.file 1 "/home/user/git/os-osek-project/erika/src/ee_atmega_system_timer.c"
 	.loc 1 62 0
 	.cfi_startproc
 /* prologue: function */
@@ -51,14 +51,14 @@ osEE_avr8_system_timer_handler:
 	.text
 .Letext0:
 	.file 2 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 3 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 4 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 8 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
-	.file 9 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
-	.file 10 "/home/user/Osek/OSEK-Project/erika/src/ee_atmega_timer1ctc.h"
+	.file 3 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 4 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 8 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
+	.file 9 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
+	.file 10 "/home/user/git/os-osek-project/erika/src/ee_atmega_timer1ctc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0xffe
@@ -2666,8 +2666,6 @@ osEE_avr8_system_timer_handler:
 	.string	"OsEE_CDB_tag"
 .LASF80:
 	.string	"p_param"
-.LASF306:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF34:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF256:
@@ -2926,8 +2924,6 @@ osEE_avr8_system_timer_handler:
 	.string	"OsEE_SDB_tag"
 .LASF67:
 	.string	"E_OS_PROTECTION_LOCKED"
-.LASF305:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_atmega_system_timer.c"
 .LASF63:
 	.string	"E_OS_PARAM_POINTER"
 .LASF238:
@@ -3056,6 +3052,8 @@ osEE_avr8_system_timer_handler:
 	.string	"OsEE_CounterDB"
 .LASF235:
 	.string	"OsEE_action_tag"
+.LASF306:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF265:
 	.string	"service_id"
 .LASF101:
@@ -3224,6 +3222,8 @@ osEE_avr8_system_timer_handler:
 	.string	"stack_size"
 .LASF81:
 	.string	"OsEE_api_param"
+.LASF305:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_atmega_system_timer.c"
 .LASF207:
 	.string	"current_num_of_act"
 .LASF110:

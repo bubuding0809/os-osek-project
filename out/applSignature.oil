@@ -42,14 +42,14 @@ CPU mySystem {
 		SCHEDULE = FULL;
 		AUTOSTART = TRUE;
 		STACK = SHARED;
-		ACTIVATION = 1;
+		ACTIVATION = 2;
 	};
 	TASK DisplayTask {
 		PRIORITY = 1;
 		SCHEDULE = FULL;
 		AUTOSTART = TRUE;
 		STACK = SHARED;
-		ACTIVATION = 1;
+		ACTIVATION = 2;
 	};
 	TASK ToggleEastServoTask {
 		PRIORITY = 2;
@@ -107,7 +107,7 @@ CPU mySystem {
 		};
 		AUTOSTART = TRUE {
 			ALARMTIME = 0;
-			CYCLETIME = 500;
+			CYCLETIME = 1000;
 		};
 	};
 	ALARM AlarmTaskDisplay {
@@ -117,7 +117,7 @@ CPU mySystem {
 		};
 		AUTOSTART = TRUE {
 			ALARMTIME = 0;
-			CYCLETIME = 500;
+			CYCLETIME = 100;
 		};
 	};
 	ALARM AlarmTaskClock {
@@ -127,7 +127,7 @@ CPU mySystem {
 		};
 		AUTOSTART = TRUE {
 			ALARMTIME = 0;
-			CYCLETIME = 1000;
+			CYCLETIME = 100;
 		};
 	};
 };

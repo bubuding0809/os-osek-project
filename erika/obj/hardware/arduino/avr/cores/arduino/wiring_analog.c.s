@@ -1398,8 +1398,6 @@ analog_reference:
 	.string	"size_t"
 .LASF17:
 	.string	"__malloc_heap_start"
-.LASF7:
-	.string	"long long int"
 .LASF33:
 	.string	"mode"
 .LASF2:
@@ -1409,7 +1407,9 @@ analog_reference:
 .LASF40:
 	.string	"__addr16"
 .LASF38:
-	.string	"/home/user/Osek/OSEK-Project/erika"
+	.string	"/home/user/git/os-osek-project/erika"
+.LASF7:
+	.string	"long long int"
 .LASF31:
 	.string	"analogWrite"
 .LASF5:

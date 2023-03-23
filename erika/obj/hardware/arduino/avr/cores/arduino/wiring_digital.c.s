@@ -2753,8 +2753,6 @@ port_to_mode_PGM:
 	.string	"size_t"
 .LASF17:
 	.string	"__malloc_heap_start"
-.LASF7:
-	.string	"long long int"
 .LASF35:
 	.string	"mode"
 .LASF2:
@@ -2766,7 +2764,9 @@ port_to_mode_PGM:
 .LASF41:
 	.string	"turnOffPWM"
 .LASF38:
-	.string	"/home/user/Osek/OSEK-Project/erika"
+	.string	"/home/user/git/os-osek-project/erika"
+.LASF7:
+	.string	"long long int"
 .LASF34:
 	.string	"pinMode"
 .LASF5:

@@ -1,47 +1,47 @@
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_oscfg.c"
-# 1 "/home/user/Osek/OSEK-Project/erika//"
+# 1 "/home/user/git/os-osek-project/erika/src/ee_oscfg.c"
+# 1 "/home/user/git/os-osek-project/erika//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_oscfg.c"
-# 20 "/home/user/Osek/OSEK-Project/erika/src/ee_oscfg.c"
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_internal.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/src/ee_internal.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_conf.h" 1
-# 62 "/home/user/Osek/OSEK-Project/erika/inc/ee_conf.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/inc/ee.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 53 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_oscfg.h" 1
-# 54 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 2
-# 62 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
-# 71 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler_cfg.h" 1
-# 56 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler_cfg.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler_cfg.h" 2
+# 1 "/home/user/git/os-osek-project/erika/src/ee_oscfg.c"
+# 20 "/home/user/git/os-osek-project/erika/src/ee_oscfg.c"
+# 1 "/home/user/git/os-osek-project/erika/src/ee_internal.h" 1
+# 61 "/home/user/git/os-osek-project/erika/src/ee_internal.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_conf.h" 1
+# 62 "/home/user/git/os-osek-project/erika/inc/ee_conf.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee.h" 1
+# 61 "/home/user/git/os-osek-project/erika/inc/ee.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 53 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_oscfg.h" 1
+# 54 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 2
+# 62 "/home/user/git/os-osek-project/erika/inc/ee.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 61 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
+# 71 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 59 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler_cfg.h" 1
+# 56 "/home/user/git/os-osek-project/erika/inc/ee_compiler_cfg.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_compiler_cfg.h" 2
 
 
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler_gcc.h" 1
-# 63 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler_gcc.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_arch_compiler_gcc.h" 1
-# 64 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler_gcc.h" 2
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler_cfg.h" 2
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 2
-# 72 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 2
-# 73 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler_gcc.h" 1
+# 63 "/home/user/git/os-osek-project/erika/inc/ee_compiler_gcc.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_arch_compiler_gcc.h" 1
+# 64 "/home/user/git/os-osek-project/erika/inc/ee_compiler_gcc.h" 2
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_compiler_cfg.h" 2
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 2
+# 72 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 59 "/home/user/git/os-osek-project/erika/inc/ee_utils.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 2
+# 73 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed/limits.h" 1 3 4
-# 74 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
+# 74 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/lib/gcc/avr/7.3.0/include/stddef.h" 1 3 4
 # 149 "/home/user/arduino-1.8.15/hardware/tools/avr/lib/gcc/avr/7.3.0/include/stddef.h" 3 4
 
@@ -57,7 +57,7 @@ typedef struct {
   long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
 # 437 "/home/user/arduino-1.8.15/hardware/tools/avr/lib/gcc/avr/7.3.0/include/stddef.h" 3 4
 } max_align_t;
-# 75 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
+# 75 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/lib/gcc/avr/7.3.0/include/stdint.h" 1 3 4
 # 9 "/home/user/arduino-1.8.15/hardware/tools/avr/lib/gcc/avr/7.3.0/include/stdint.h" 3 4
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h" 1 3 4
@@ -170,17 +170,17 @@ typedef int64_t intmax_t;
 
 typedef uint64_t uintmax_t;
 # 10 "/home/user/arduino-1.8.15/hardware/tools/avr/lib/gcc/avr/7.3.0/include/stdint.h" 2 3 4
-# 76 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
+# 76 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
 
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_compiler.h" 1
-# 63 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_compiler.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 64 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_compiler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 65 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_compiler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 66 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_compiler.h" 2
-# 78 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_avr8_compiler.h" 1
+# 63 "/home/user/git/os-osek-project/erika/inc/ee_avr8_compiler.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 64 "/home/user/git/os-osek-project/erika/inc/ee_avr8_compiler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 65 "/home/user/git/os-osek-project/erika/inc/ee_avr8_compiler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 66 "/home/user/git/os-osek-project/erika/inc/ee_avr8_compiler.h" 2
+# 78 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
 
 
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/interrupt.h" 1 3
@@ -230,14 +230,14 @@ typedef struct
 # 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/lock.h" 1 3
 # 730 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/io.h" 2 3
 # 39 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/avr/interrupt.h" 2 3
-# 81 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 2
+# 81 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 2
 
 
 
 
 
 
-# 86 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
+# 86 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
 typedef enum {
   OSEE_FALSE = (0!=0),
   OSEE_TRUE = (0==0)
@@ -275,45 +275,45 @@ typedef uint8_t OsEE_core_id;
 
 
 typedef void (* OsEE_void_cb) (void);
-# 63 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 64 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 65 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 62 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 63 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 2
-# 98 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h"
+# 63 "/home/user/git/os-osek-project/erika/inc/ee.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 64 "/home/user/git/os-osek-project/erika/inc/ee.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 65 "/home/user/git/os-osek-project/erika/inc/ee.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 1
+# 59 "/home/user/git/os-osek-project/erika/inc/ee_hal.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 61 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 62 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 63 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 2
+# 98 "/home/user/git/os-osek-project/erika/inc/ee_hal.h"
 static inline OsEE_addr osEE_get_SP ( void )
 {
   return (OsEE_addr)
-# 100 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 3
+# 100 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 3
                    (*(volatile uint16_t *)(((((uint16_t) &((*(volatile uint16_t *)((0x3D) + 0x20)))) - 0x20)) + 0x20))
-# 100 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h"
+# 100 "/home/user/git/os-osek-project/erika/inc/ee_hal.h"
                                               ;
 }
 
 static inline OsEE_core_id osEE_get_curr_core_id ( void ) {
   return (OsEE_core_id)0U;
 }
-# 66 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h" 2
+# 66 "/home/user/git/os-osek-project/erika/inc/ee.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_api.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 58 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 59 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 58 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h" 2
 
 
 
@@ -430,13 +430,13 @@ typedef struct {
 } AlarmBaseType;
 
 typedef AlarmBaseType * AlarmBaseRefType;
-# 187 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
+# 187 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
 typedef OsEE_reg ResourceType;
-# 200 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
+# 200 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
 typedef OsEE_event_mask EventMaskType;
 
 typedef EventMaskType * EventMaskRefType;
-# 213 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
+# 213 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
 typedef OsEE_object_id_type ObjectIDType;
 
 
@@ -596,13 +596,13 @@ typedef enum OsEE_service_id_type_tag {
 
 
 typedef OsEE_service_id_type OSServiceIdType;
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_osek.h" 1
-# 56 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_osek.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_osek.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_osek.h" 2
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_osek.h" 1
+# 56 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_osek.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_osek.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h" 1
+# 58 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_osek.h" 2
 
 
 
@@ -799,7 +799,7 @@ extern void
 
 
 extern void StartupHook(void);
-# 273 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_osek.h"
+# 273 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_osek.h"
 OSServiceIdType
   osEE_get_service_id
 (
@@ -823,35 +823,35 @@ OsEE_api_param
 (
   void
 );
-# 349 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_osek.h"
+# 349 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_osek.h"
 ISRType
   GetISRID
 (
   void
 );
-# 61 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_dynamic.h" 1
-# 53 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_dynamic.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 54 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_dynamic.h" 2
-# 62 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_extension.h" 1
-# 56 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_extension.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_extension.h" 2
-# 63 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_oo_api_extension.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 62 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h" 2
+# 61 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_dynamic.h" 1
+# 53 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_dynamic.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 54 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_dynamic.h" 2
+# 62 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_extension.h" 1
+# 56 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_extension.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_extension.h" 2
+# 63 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 58 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h" 1
+# 59 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_oo_api_extension.h" 1
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h" 1
+# 61 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 62 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h" 2
 
 typedef struct OsEE_CTX_tag {
   OsEE_reg r29;
@@ -899,19 +899,19 @@ typedef struct OsEE_HDB_tag {
 
 
 extern void osEE_avr8_system_timer_handler(void);
-# 61 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 1
-# 56 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 2
+# 61 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 1
+# 56 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 58 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 59 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 60 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h" 1
+# 61 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 2
 
 
 struct OsEE_TDB_tag;
@@ -936,9 +936,9 @@ static inline OsEE_SN *
   p_sn_allocated = (*pp_fist);
   (*pp_fist) = p_sn_allocated->p_next;
   p_sn_allocated->p_next = 
-# 84 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 3 4
+# 84 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 3 4
                            ((void *)0)
-# 84 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
+# 84 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
                                ;
 
   return p_sn_allocated;
@@ -962,10 +962,10 @@ OsEE_bool
   OsEE_SN * p_sn_new,
   OsEE_bool const hnd_act
 );
-# 159 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
+# 159 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
 typedef OsEE_SN * OsEE_RQ;
-# 62 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 2
-# 80 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 62 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 2
+# 80 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 typedef void (* OsEE_kernel_cb) (void);
 
 typedef unsigned char OsEE_byte;
@@ -975,7 +975,7 @@ typedef unsigned char OsEE_byte;
 
 
 typedef unsigned char CoreMaskType;
-# 99 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 99 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 typedef enum OsEE_os_context_tag{
   OSEE_KERNEL_CTX,
   OSEE_TASK_CTX,
@@ -1014,7 +1014,7 @@ typedef struct OsEE_MCB_tag {
 
 
 } OsEE_MCB;
-# 145 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 145 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 typedef struct OsEE_MDB_tag {
   OsEE_MCB * p_mcb;
   TaskPrio mtx_prio;
@@ -1060,7 +1060,7 @@ typedef struct OsEE_TW_tag {
   OsEE_TDB * p_tdb;
   TaskFunc real_task_func;
 } const OsEE_TW;
-# 198 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 198 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 struct OsEE_TriggerDB_tag;
 
 
@@ -1075,7 +1075,7 @@ typedef struct OsEE_CounterCB_tag {
 
 
 } OsEE_CounterCB;
-# 220 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 220 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 typedef struct OsEE_CounterDB_tag {
   OsEE_CounterCB * p_counter_cb;
 
@@ -1107,7 +1107,7 @@ typedef struct OsEE_action_tag {
   OsEE_action_param param;
   OsEE_action_type type;
 } OsEE_action;
-# 259 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 259 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 typedef struct OsEE_TriggerCB_tag {
   struct OsEE_TriggerDB_tag const * p_next;
   TickType when;
@@ -1144,7 +1144,7 @@ typedef struct OsEE_autostart_trigger_tag {
   OsEE_autostart_trigger_info (* p_trigger_ptr_array)[];
   MemSize trigger_array_size;
 } const OsEE_autostart_trigger;
-# 308 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 308 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 typedef OsEE_TriggerCB OsEE_AlarmCB;
 typedef OsEE_TriggerDB OsEE_AlarmDB;
 
@@ -1228,7 +1228,7 @@ typedef struct OsEE_CDB_tag {
 } const OsEE_CDB;
 
 typedef struct OsEE_KCB_tag {
-# 412 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 412 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
   OsEE_reg dummy;
 
 } OsEE_KCB;
@@ -1267,7 +1267,7 @@ typedef struct OsEE_KDB_tag {
 
 
 } const OsEE_KDB;
-# 477 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
+# 477 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
 extern void
   osEE_change_context_from_task_end
 (
@@ -1280,29 +1280,29 @@ extern void
 (
   void
 );
-# 64 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 2
-# 67 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 2
+# 64 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 2
+# 67 "/home/user/git/os-osek-project/erika/inc/ee.h" 2
 
 
 
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_irq.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_irq.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_irq.h" 2
-# 71 "/home/user/Osek/OSEK-Project/erika/inc/ee.h" 2
-# 63 "/home/user/Osek/OSEK-Project/erika/inc/ee_conf.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h" 1
-# 64 "/home/user/Osek/OSEK-Project/erika/inc/ee_conf.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 1
-# 65 "/home/user/Osek/OSEK-Project/erika/inc/ee_conf.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 1
-# 66 "/home/user/Osek/OSEK-Project/erika/inc/ee_conf.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h" 1
-# 56 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_avr8_irq.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_avr8_irq.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 58 "/home/user/git/os-osek-project/erika/inc/ee_avr8_irq.h" 2
+# 71 "/home/user/git/os-osek-project/erika/inc/ee.h" 2
+# 63 "/home/user/git/os-osek-project/erika/inc/ee_conf.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h" 1
+# 64 "/home/user/git/os-osek-project/erika/inc/ee_conf.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 1
+# 65 "/home/user/git/os-osek-project/erika/inc/ee_conf.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 1
+# 66 "/home/user/git/os-osek-project/erika/inc/ee_conf.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h" 1
+# 56 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 57 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 1
+# 58 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h" 2
 
 extern OsEE_KDB KDB;
 extern OsEE_CDB CDB;
@@ -1357,43 +1357,43 @@ static inline void osEE_unlock_core_id ( CoreIdType core_id ) {}
 static inline void osEE_unlock_core ( OsEE_CDB * const p_cdb ) {}
 
 static inline void osEE_unlock_curr_core ( void ) {}
-# 67 "/home/user/Osek/OSEK-Project/erika/inc/ee_conf.h" 2
-# 62 "/home/user/Osek/OSEK-Project/erika/src/ee_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_avr8_irq.h" 1
-# 62 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h" 1
-# 63 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 1
-# 64 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal.h" 1
-# 62 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h" 1
-# 63 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h" 1
-# 64 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 1
-# 65 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 1
-# 66 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h" 2
-# 83 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h"
+# 67 "/home/user/git/os-osek-project/erika/inc/ee_conf.h" 2
+# 62 "/home/user/git/os-osek-project/erika/src/ee_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 1
+# 58 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 59 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 60 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 1
+# 61 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_avr8_irq.h" 1
+# 62 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h" 1
+# 63 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 1
+# 64 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 1
+# 57 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 58 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 59 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 60 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 61 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal.h" 1
+# 62 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h" 1
+# 63 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h" 1
+# 64 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 1
+# 65 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 1
+# 66 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h" 2
+# 83 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h"
 void
   osEE_hal_save_ctx_and_restore_ctx
 (
@@ -1430,7 +1430,7 @@ void __attribute__((noreturn))
   OsEE_SCB * p_term_scb,
   OsEE_kernel_cb kernel_cb
 );
-# 129 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h"
+# 129 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h"
 static inline void
   osEE_hal_terminate_activation
 (
@@ -1466,7 +1466,7 @@ static inline OsEE_bool
 
   return OSEE_TRUE;
 }
-# 179 "/home/user/Osek/OSEK-Project/erika/src/ee_std_change_context.h"
+# 179 "/home/user/git/os-osek-project/erika/src/ee_std_change_context.h"
 static inline void
   osEE_hal_signal_broadcast
 (
@@ -1486,32 +1486,32 @@ static inline void
 
   ((void)core_id);
 }
-# 65 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
+# 65 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
 
 
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_atmega_timer1ctc.h" 1
-# 96 "/home/user/Osek/OSEK-Project/erika/src/ee_atmega_timer1ctc.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 97 "/home/user/Osek/OSEK-Project/erika/src/ee_atmega_timer1ctc.h" 2
-# 122 "/home/user/Osek/OSEK-Project/erika/src/ee_atmega_timer1ctc.h"
+# 1 "/home/user/git/os-osek-project/erika/src/ee_atmega_timer1ctc.h" 1
+# 96 "/home/user/git/os-osek-project/erika/src/ee_atmega_timer1ctc.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 97 "/home/user/git/os-osek-project/erika/src/ee_atmega_timer1ctc.h" 2
+# 122 "/home/user/git/os-osek-project/erika/src/ee_atmega_timer1ctc.h"
 void OsEE_atmega_startTimer1(uint32_t microsecondsInterval);
-# 68 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 2
-# 98 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h"
+# 68 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 2
+# 98 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h"
 static inline void osEE_hal_disableIRQ( void )
 {
   
-# 100 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 3
+# 100 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 3
  __asm__ __volatile__ ("cli" ::: "memory")
-# 100 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h"
+# 100 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h"
       ;
 }
 
 static inline void osEE_hal_enableIRQ( void )
 {
   
-# 105 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 3
+# 105 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 3
  __asm__ __volatile__ ("sei" ::: "memory")
-# 105 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h"
+# 105 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h"
       ;
 }
 
@@ -1519,9 +1519,9 @@ static inline void osEE_hal_enableIRQ( void )
 static inline OsEE_reg osEE_hal_suspendIRQ ( void )
 {
   register OsEE_reg sr = 
-# 111 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 3
+# 111 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 3
                         (*(volatile uint8_t *)((0x3F) + 0x20))
-# 111 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h"
+# 111 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h"
                             ;
   osEE_hal_disableIRQ();
   return sr;
@@ -1531,9 +1531,9 @@ static inline void osEE_hal_resumeIRQ ( OsEE_reg flags )
 {
   __asm__ volatile("" : : : "memory");
   
-# 119 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 3
+# 119 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 3
  (*(volatile uint8_t *)((0x3F) + 0x20)) 
-# 119 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h"
+# 119 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h"
       = flags;
 }
 
@@ -1602,37 +1602,37 @@ static inline void
 {
   osEE_change_context_from_task_end(p_from, p_to);
 }
-# 63 "/home/user/Osek/OSEK-Project/erika/src/ee_internal.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h" 1
-# 56 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_hal_internal.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 1
-# 56 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h"
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_cfg.h" 1
-# 57 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_utils.h" 1
-# 58 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_compiler.h" 1
-# 59 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h" 1
-# 60 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h" 1
-# 61 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h" 1
-# 62 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h" 1
-# 63 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
-# 1 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h" 1
-# 64 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h" 2
+# 63 "/home/user/git/os-osek-project/erika/src/ee_internal.h" 2
+# 1 "/home/user/git/os-osek-project/erika/src/ee_kernel.h" 1
+# 56 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api.h" 1
+# 57 "/home/user/git/os-osek-project/erika/src/ee_kernel.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 1
+# 58 "/home/user/git/os-osek-project/erika/src/ee_kernel.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 1
+# 59 "/home/user/git/os-osek-project/erika/src/ee_kernel.h" 2
+# 1 "/home/user/git/os-osek-project/erika/src/ee_hal_internal.h" 1
+# 60 "/home/user/git/os-osek-project/erika/src/ee_kernel.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h" 1
+# 61 "/home/user/git/os-osek-project/erika/src/ee_kernel.h" 2
+# 1 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 1
+# 56 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h"
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_cfg.h" 1
+# 57 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_utils.h" 1
+# 58 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_compiler.h" 1
+# 59 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h" 1
+# 60 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h" 1
+# 61 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h" 1
+# 62 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h" 1
+# 63 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
+# 1 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h" 1
+# 64 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h" 2
 
 OsEE_bool
   osEE_scheduler_rq_insert
@@ -1730,7 +1730,7 @@ OsEE_TDB *
   OsEE_CDB * p_cdb,
   OsEE_TDB * * pp_tdb_from
 );
-# 62 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h" 2
+# 62 "/home/user/git/os-osek-project/erika/src/ee_kernel.h" 2
 
 void
   osEE_change_context_from_running
@@ -1738,7 +1738,7 @@ void
   OsEE_TDB * p_from,
   OsEE_TDB * p_to
 );
-# 80 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
+# 80 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
 static inline OsEE_bool
   osEE_cpu_startos
 (
@@ -1958,7 +1958,7 @@ static inline void
   OsEE_CCB * p_ccb
 )
 {
-# 311 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
+# 311 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
   ((void)p_ccb);
 
 }
@@ -1969,7 +1969,7 @@ static inline void
   OsEE_CCB * p_ccb
 )
 {
-# 333 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
+# 333 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
   ((void)p_ccb);
 
 }
@@ -1981,7 +1981,7 @@ static inline void
   StatusType Error
 )
 {
-# 356 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
+# 356 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
   ((void)p_ccb);
   ((void)Error);
 
@@ -2217,5 +2217,5 @@ static inline OsEE_AlarmCB *
   return (OsEE_AlarmCB * )
     (osEE_alarm_get_trigger_db(p_alarm_db)->p_trigger_cb);
 }
-# 64 "/home/user/Osek/OSEK-Project/erika/src/ee_internal.h" 2
-# 21 "/home/user/Osek/OSEK-Project/erika/src/ee_oscfg.c" 2
+# 64 "/home/user/git/os-osek-project/erika/src/ee_internal.h" 2
+# 21 "/home/user/git/os-osek-project/erika/src/ee_oscfg.c" 2

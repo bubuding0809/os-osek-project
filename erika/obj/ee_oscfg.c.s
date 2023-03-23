@@ -9,12 +9,12 @@ __zero_reg__ = 1
 	.cfi_sections	.debug_frame
 .Letext0:
 	.file 1 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 2 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 3 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 4 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
+	.file 2 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 3 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 4 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0xf5c
@@ -2396,8 +2396,6 @@ __zero_reg__ = 1
 	.string	"OsEE_CDB_tag"
 .LASF80:
 	.string	"p_param"
-.LASF302:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF34:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF256:
@@ -2606,8 +2604,6 @@ __zero_reg__ = 1
 	.string	"OsEE_kernel_cb"
 .LASF53:
 	.string	"E_OS_LIMIT"
-.LASF301:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_oscfg.c"
 .LASF284:
 	.string	"autostart_trigger_array_size"
 .LASF19:
@@ -2780,6 +2776,8 @@ __zero_reg__ = 1
 	.string	"OsEE_CounterDB"
 .LASF235:
 	.string	"OsEE_action_tag"
+.LASF302:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF265:
 	.string	"service_id"
 .LASF101:
@@ -2898,6 +2896,8 @@ __zero_reg__ = 1
 	.string	"OSServiceId_GetAlarm_Entry"
 .LASF165:
 	.string	"OsEE_HDB"
+.LASF160:
+	.string	"stack_size"
 .LASF189:
 	.string	"OSEE_SHUTDOWNHOOK_CTX"
 .LASF43:
@@ -2938,8 +2938,8 @@ __zero_reg__ = 1
 	.string	"E_OS_CORE"
 .LASF112:
 	.string	"OSServiceId_SetEvent_Entry"
-.LASF160:
-	.string	"stack_size"
+.LASF301:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_oscfg.c"
 .LASF81:
 	.string	"OsEE_api_param"
 .LASF207:

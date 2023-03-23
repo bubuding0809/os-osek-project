@@ -14,7 +14,7 @@ serial_print:
 /* stack size = 0 */
 .L__stack_usage = 0
 /* #APP */
- ;  17 "/home/user/Osek/OSEK-Project/debug.cpp" 1
+ ;  17 "/home/user/git/os-osek-project/debug.cpp" 1
 	cli
  ;  0 "" 2
 /* #NOAPP */
@@ -32,7 +32,7 @@ serial_print:
 	ldi r25,hi8(Serial)
 	call _ZN5Print5writeEPKhj
 /* #APP */
- ;  22 "/home/user/Osek/OSEK-Project/debug.cpp" 1
+ ;  22 "/home/user/git/os-osek-project/debug.cpp" 1
 	sei
  ;  0 "" 2
 /* epilogue start */

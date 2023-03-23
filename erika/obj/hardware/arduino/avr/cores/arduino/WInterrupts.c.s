@@ -1514,8 +1514,6 @@ intFunc:
 	.string	"attachInterrupt"
 .LASF17:
 	.string	"__malloc_heap_start"
-.LASF7:
-	.string	"long long int"
 .LASF36:
 	.string	"mode"
 .LASF2:
@@ -1525,7 +1523,9 @@ intFunc:
 .LASF30:
 	.string	"__vector_2"
 .LASF39:
-	.string	"/home/user/Osek/OSEK-Project/erika"
+	.string	"/home/user/git/os-osek-project/erika"
+.LASF7:
+	.string	"long long int"
 .LASF5:
 	.string	"long int"
 .LASF20:

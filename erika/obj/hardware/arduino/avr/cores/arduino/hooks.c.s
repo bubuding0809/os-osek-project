@@ -119,12 +119,12 @@ __empty:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF2:
-	.string	"/home/user/Osek/OSEK-Project/erika"
-.LASF0:
-	.string	"GNU C11 7.3.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g -Os -std=gnu11 -ffunction-sections -fdata-sections"
 .LASF3:
 	.string	"__empty"
+.LASF0:
+	.string	"GNU C11 7.3.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g -Os -std=gnu11 -ffunction-sections -fdata-sections"
+.LASF2:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF1:
 	.string	"/home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/hooks.c"
 	.ident	"GCC: (GNU) 7.3.0"

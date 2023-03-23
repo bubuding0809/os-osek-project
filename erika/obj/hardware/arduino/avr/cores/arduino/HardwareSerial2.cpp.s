@@ -806,6 +806,8 @@ __zero_reg__ = 1
 	.string	"float"
 .LASF15:
 	.string	"port_to_mode_PGM"
+.LASF40:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF11:
 	.string	"long unsigned int"
 .LASF35:
@@ -824,8 +826,6 @@ __zero_reg__ = 1
 	.string	"double"
 .LASF44:
 	.string	"_ZN5Print5writeEPKcj"
-.LASF40:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF28:
 	.string	"SKIP_ALL"
 .LASF37:

@@ -12,7 +12,7 @@ __zero_reg__ = 1
 	.type	osEE_scheduler_task_activated, @function
 osEE_scheduler_task_activated:
 .LFB62:
-	.file 1 "/home/user/Osek/OSEK-Project/erika/src/ee_oo_sched_partitioned.c"
+	.file 1 "/home/user/git/os-osek-project/erika/src/ee_oo_sched_partitioned.c"
 	.loc 1 90 0
 	.cfi_startproc
 .LVL0:
@@ -107,7 +107,7 @@ osEE_scheduler_task_activated:
 .LBB72:
 .LBB73:
 .LBB74:
-	.file 2 "/home/user/Osek/OSEK-Project/erika/inc/ee_scheduler_types.h"
+	.file 2 "/home/user/git/os-osek-project/erika/inc/ee_scheduler_types.h"
 	.loc 2 83 0 is_stmt 1
 	std Z+5,r23
 	std Z+4,r22
@@ -141,7 +141,7 @@ osEE_scheduler_task_activated:
 .LVL9:
 .LBB75:
 .LBB76:
-	.file 3 "/home/user/Osek/OSEK-Project/erika/src/ee_kernel.h"
+	.file 3 "/home/user/git/os-osek-project/erika/src/ee_kernel.h"
 	.loc 3 251 0
 	std Y+9,__zero_reg__
 	std Y+8,__zero_reg__
@@ -839,12 +839,12 @@ osEE_scheduler_task_set_running:
 	.text
 .Letext0:
 	.file 4 "/home/user/arduino-1.8.15/hardware/tools/avr/avr/include/stdint.h"
-	.file 5 "/home/user/Osek/OSEK-Project/erika/inc/ee_platform_types.h"
-	.file 6 "/home/user/Osek/OSEK-Project/erika/inc/ee_api_types.h"
-	.file 7 "/home/user/Osek/OSEK-Project/erika/inc/ee_hal_internal_types.h"
-	.file 8 "/home/user/Osek/OSEK-Project/erika/inc/ee_kernel_types.h"
-	.file 9 "/home/user/Osek/OSEK-Project/erika/inc/ee_get_kernel_and_core.h"
-	.file 10 "/home/user/Osek/OSEK-Project/erika/src/ee_scheduler.h"
+	.file 5 "/home/user/git/os-osek-project/erika/inc/ee_platform_types.h"
+	.file 6 "/home/user/git/os-osek-project/erika/inc/ee_api_types.h"
+	.file 7 "/home/user/git/os-osek-project/erika/inc/ee_hal_internal_types.h"
+	.file 8 "/home/user/git/os-osek-project/erika/inc/ee_kernel_types.h"
+	.file 9 "/home/user/git/os-osek-project/erika/inc/ee_get_kernel_and_core.h"
+	.file 10 "/home/user/git/os-osek-project/erika/src/ee_scheduler.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.long	0x174c
@@ -6061,8 +6061,6 @@ osEE_scheduler_task_set_running:
 	.string	"OsEE_CDB_tag"
 .LASF80:
 	.string	"p_param"
-.LASF346:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF34:
 	.string	"OSEE_TASK_READY_STACKED"
 .LASF256:
@@ -6197,8 +6195,6 @@ osEE_scheduler_task_set_running:
 	.string	"pp_fist"
 .LASF163:
 	.string	"p_sdb"
-.LASF345:
-	.string	"/home/user/Osek/OSEK-Project/erika/src/ee_oo_sched_partitioned.c"
 .LASF20:
 	.string	"TaskType"
 .LASF47:
@@ -6493,6 +6489,8 @@ osEE_scheduler_task_set_running:
 	.string	"OsEE_CounterDB"
 .LASF235:
 	.string	"OsEE_action_tag"
+.LASF346:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF265:
 	.string	"service_id"
 .LASF101:
@@ -6623,6 +6621,8 @@ osEE_scheduler_task_set_running:
 	.string	"is_preemption"
 .LASF282:
 	.string	"autostart_tdb_array_size"
+.LASF345:
+	.string	"/home/user/git/os-osek-project/erika/src/ee_oo_sched_partitioned.c"
 .LASF145:
 	.string	"OSId_Action"
 .LASF122:

@@ -2044,8 +2044,6 @@ pulseInLong:
 	.string	"size_t"
 .LASF17:
 	.string	"__malloc_heap_start"
-.LASF7:
-	.string	"long long int"
 .LASF2:
 	.string	"uint8_t"
 .LASF41:
@@ -2057,7 +2055,9 @@ pulseInLong:
 .LASF39:
 	.string	"width"
 .LASF44:
-	.string	"/home/user/Osek/OSEK-Project/erika"
+	.string	"/home/user/git/os-osek-project/erika"
+.LASF7:
+	.string	"long long int"
 .LASF5:
 	.string	"long int"
 .LASF43:

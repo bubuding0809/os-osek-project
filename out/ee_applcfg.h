@@ -47,7 +47,7 @@
  *
  **************************************************************************/
 #define OSEE_TASK_ARRAY_SIZE      (7U)
-#define OSEE_SN_ARRAY_SIZE        (7U)
+#define OSEE_SN_ARRAY_SIZE        (9U)
 #define OSEE_STACK_ARRAY_SIZE     (2U)
 #define OSEE_RESOURCE_ARRAY_SIZE  (1U)
 #define OSEE_COUNTERS_ARRAY_SIZE  (1U)

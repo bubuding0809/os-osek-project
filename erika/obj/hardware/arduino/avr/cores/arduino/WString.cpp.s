@@ -24467,8 +24467,8 @@ _ZZN6StringixEjE19dummy_writable_char:
 	.string	"dtostrf"
 .LASF156:
 	.string	"_ZN15StringSumHelperC4ERK6String"
-.LASF30:
-	.string	"~String"
+.LASF191:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF227:
 	.string	"__radix"
 .LASF258:
@@ -24483,8 +24483,6 @@ _ZZN6StringixEjE19dummy_writable_char:
 	.string	"move"
 .LASF176:
 	.string	"right"
-.LASF191:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF10:
 	.string	"long long int"
 .LASF7:
@@ -24785,6 +24783,8 @@ _ZZN6StringixEjE19dummy_writable_char:
 	.string	"strrchr"
 .LASF214:
 	.string	"_ZN6StringC2Emh"
+.LASF30:
+	.string	"~String"
 .LASF208:
 	.string	"value"
 .LASF105:

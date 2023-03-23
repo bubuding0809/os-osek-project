@@ -748,6 +748,8 @@ _ZdaPv:
 	.string	"operator delete"
 .LASF4:
 	.string	"char"
+.LASF20:
+	.string	"operator new"
 .LASF1:
 	.string	"long int"
 .LASF21:
@@ -766,14 +768,12 @@ _ZdaPv:
 	.string	"_Znwj"
 .LASF13:
 	.string	"free"
-.LASF16:
-	.string	"/home/user/Osek/OSEK-Project/erika"
 .LASF2:
 	.string	"__malloc_margin"
 .LASF15:
 	.string	"/home/user/arduino-1.8.15/hardware/arduino/avr/cores/arduino/new.cpp"
-.LASF20:
-	.string	"operator new"
+.LASF16:
+	.string	"/home/user/git/os-osek-project/erika"
 .LASF12:
 	.string	"malloc"
 	.ident	"GCC: (GNU) 7.3.0"
