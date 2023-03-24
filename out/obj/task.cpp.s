@@ -279,18 +279,18 @@ FuncToggleServoTask:
 	.size	FuncToggleServoTask, .-FuncToggleServoTask
 	.section	.rodata.FuncDisplayTask.str1.1,"aMS",@progbits,1
 .LC7:
-	.string	"ON "
-.LC8:
 	.string	"OFF"
+.LC8:
+	.string	"ON "
 .global	__fixsfsi
 .global	__addsf3
 .global	__mulsf3
 .LC9:
 	.string	"LUX : %3dW %3dA %3dE"
 .LC10:
-	.string	"SHADE : E-%s W-%s"
+	.string	"SHADE : W-%s E-%s"
 .LC11:
-	.string	"LIGHT : E-%s W-%s"
+	.string	"LIGHT : W-%s E-%s"
 .LC12:
 	.string	"CLOCK : %02d:%02d:%02d%"
 	.section	.text.FuncDisplayTask,"ax",@progbits
@@ -381,7 +381,7 @@ FuncDisplayTask:
 	out __SP_H__,r29
 	out __SREG__,__tmp_reg__
 	out __SP_L__,r28
-	lds r24,westContracted
+	lds r24,eastContracted
 	ldi r18,lo8(.LC8)
 	ldi r19,hi8(.LC8)
 	tst r24
@@ -389,7 +389,7 @@ FuncDisplayTask:
 	ldi r18,lo8(.LC7)
 	ldi r19,hi8(.LC7)
 .L31:
-	lds r24,eastContracted
+	lds r24,westContracted
 	cpse r24,__zero_reg__
 	rjmp .L37
 	ldi r24,lo8(.LC8)
@@ -415,7 +415,7 @@ FuncDisplayTask:
 	ldi r24,lo8(lcd)
 	ldi r25,hi8(lcd)
 	call _ZN13LiquidCrystal9setCursorEhh
-	ldi r24,lo8(7)
+	ldi r24,lo8(3)
 	call digitalRead
 	in __tmp_reg__,__SREG__
 	cli
@@ -425,18 +425,18 @@ FuncDisplayTask:
 	or r24,r25
 	breq .+2
 	rjmp .L38
-	ldi r25,lo8(.LC8)
+	ldi r25,lo8(.LC7)
 	mov r14,r25
-	ldi r25,hi8(.LC8)
+	ldi r25,hi8(.LC7)
 	mov r15,r25
 .L33:
-	ldi r24,lo8(3)
+	ldi r24,lo8(7)
 	call digitalRead
 	or r24,r25
 	breq .+2
 	rjmp .L39
-	ldi r24,lo8(.LC8)
-	ldi r25,hi8(.LC8)
+	ldi r24,lo8(.LC7)
+	ldi r25,hi8(.LC7)
 .L34:
 	push r15
 	push r14
@@ -521,14 +521,14 @@ FuncDisplayTask:
 	ldi r25,hi8(.LC7)
 	rjmp .L32
 .L38:
-	ldi r24,lo8(.LC7)
+	ldi r24,lo8(.LC8)
 	mov r14,r24
-	ldi r24,hi8(.LC7)
+	ldi r24,hi8(.LC8)
 	mov r15,r24
 	rjmp .L33
 .L39:
-	ldi r24,lo8(.LC7)
-	ldi r25,hi8(.LC7)
+	ldi r24,lo8(.LC8)
+	ldi r25,hi8(.LC8)
 	rjmp .L34
 	.size	FuncDisplayTask, .-FuncDisplayTask
 	.section	.text.long_operation,"ax",@progbits
@@ -912,7 +912,7 @@ FuncDetectTask:
 	sbiw r24,30
 	brlt .+2
 	rjmp .L51
-.L57:
+.L52:
 	lds r12,avgEast
 	lds r13,avgEast+1
 	lds r14,avgEast+2
@@ -925,16 +925,16 @@ FuncDetectTask:
 	movw r22,r12
 	call __ltsf2
 	sbrs r24,7
-	rjmp .L86
+	rjmp .L84
 	lds r24,eastContracted
 	cpse r24,__zero_reg__
-	rjmp .L64
-.L67:
+	rjmp .L63
+.L66:
 	ldi r22,lo8(2)
 	ldi r23,0
 	ldi r24,lo8(6)
 	call SetEvent
-.L65:
+.L64:
 	lds r12,avgWest
 	lds r13,avgWest+1
 	lds r14,avgWest+2
@@ -947,16 +947,16 @@ FuncDetectTask:
 	movw r22,r12
 	call __ltsf2
 	sbrs r24,7
-	rjmp .L87
+	rjmp .L85
 	lds r24,westContracted
 	cpse r24,__zero_reg__
-	rjmp .L70
-.L73:
+	rjmp .L69
+.L72:
 	ldi r22,lo8(1)
 	ldi r23,0
 	ldi r24,lo8(6)
 	call SetEvent
-.L71:
+.L70:
 /* epilogue start */
 	pop r29
 	pop r28
@@ -966,38 +966,24 @@ FuncDetectTask:
 	pop r12
 	jmp TerminateTask
 .L50:
-	cpi r18,7
+	cpi r18,8
 	cpc r19,__zero_reg__
-	brlt .+2
-	rjmp .L53
+	brge .L53
 	sbiw r24,30
 	brge .L54
 .L51:
-	ldi r24,lo8(3)
-	call digitalRead
-	or r24,r25
-	brne .L55
 	ldi r22,lo8(1)
 	ldi r24,lo8(3)
 	call digitalWrite
-.L55:
-	ldi r24,lo8(7)
-	call digitalRead
-	or r24,r25
-	breq .+2
-	rjmp .L57
-.L56:
+.L88:
 	ldi r22,lo8(1)
-.L89:
-	ldi r24,lo8(7)
-	call digitalWrite
-	rjmp .L57
+	rjmp .L87
 .L54:
-	cpi r18,6
+	cpi r18,7
 	cpc r19,__zero_reg__
 	breq .+2
-	rjmp .L57
-.L58:
+	rjmp .L52
+.L55:
 	ldi r18,0
 	ldi r19,0
 	ldi r20,lo8(72)
@@ -1009,9 +995,9 @@ FuncDetectTask:
 	call __lesf2
 	ldi r22,lo8(1)
 	cp __zero_reg__,r24
-	brge .L88
+	brge .L86
 	ldi r22,0
-.L88:
+.L86:
 	ldi r24,lo8(3)
 	call digitalWrite
 	ldi r18,0
@@ -1023,15 +1009,18 @@ FuncDetectTask:
 	lds r24,avgWest+2
 	lds r25,avgWest+3
 	call __lesf2
-	cp __zero_reg__,r24
-	brge .L56
 	ldi r22,0
-	rjmp .L89
+	cp __zero_reg__,r24
+	brge .L88
+.L87:
+	ldi r24,lo8(7)
+	call digitalWrite
+	rjmp .L52
 .L53:
 	sbiw r24,30
-	brge .L58
-	rjmp .L57
-.L86:
+	brge .L55
+	rjmp .L52
+.L84:
 	ldi r18,0
 	ldi r19,0
 	ldi r20,lo8(-6)
@@ -1040,13 +1029,13 @@ FuncDetectTask:
 	movw r22,r12
 	call __gesf2
 	sbrc r24,7
-	rjmp .L65
+	rjmp .L64
 	lds r24,eastContracted
 	tst r24
 	brne .+2
-	rjmp .L65
-	rjmp .L67
-.L87:
+	rjmp .L64
+	rjmp .L66
+.L85:
 	ldi r18,0
 	ldi r19,0
 	ldi r20,lo8(-6)
@@ -1055,13 +1044,13 @@ FuncDetectTask:
 	movw r22,r12
 	call __gesf2
 	sbrc r24,7
-	rjmp .L71
+	rjmp .L70
 	lds r24,westContracted
 	tst r24
 	brne .+2
-	rjmp .L71
-	rjmp .L73
-.L64:
+	rjmp .L70
+	rjmp .L72
+.L63:
 	ldi r18,0
 	ldi r19,0
 	ldi r20,lo8(-6)
@@ -1070,9 +1059,9 @@ FuncDetectTask:
 	movw r22,r12
 	call __gesf2
 	sbrc r24,7
-	rjmp .L65
-	rjmp .L67
-.L70:
+	rjmp .L64
+	rjmp .L66
+.L69:
 	ldi r18,0
 	ldi r19,0
 	ldi r20,lo8(-6)
@@ -1081,8 +1070,8 @@ FuncDetectTask:
 	movw r22,r12
 	call __gesf2
 	sbrc r24,7
-	rjmp .L71
-	rjmp .L73
+	rjmp .L70
+	rjmp .L72
 	.size	FuncDetectTask, .-FuncDetectTask
 	.section	.text.startup._GLOBAL__sub_I_eastServo,"ax",@progbits
 	.type	_GLOBAL__sub_I_eastServo, @function
@@ -1138,13 +1127,13 @@ second:
 	.type	minute, @object
 	.size	minute, 2
 minute:
-	.word	29
+	.word	20
 .global	hour
 	.section	.data.hour,"aw",@progbits
 	.type	hour, @object
 	.size	hour, 2
 hour:
-	.word	6
+	.word	7
 .global	countWest
 	.section	.bss.countWest,"aw",@nobits
 	.type	countWest, @object

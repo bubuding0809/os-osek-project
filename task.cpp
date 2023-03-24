@@ -106,8 +106,8 @@ bool westContracted = false;
 int countEast = 0, countWest =0;
 
 // 24Hr clock
-int hour = 6;
-int minute = 29;
+int hour = 07;
+int minute = 20;
 int second = 55;
 bool isNewTime = false;
 
@@ -192,16 +192,12 @@ TASK(DetectTask) {
    }
 
   // Street light operation based on clock time during the night
-  if ((hour >= 18 && minute >= 30) || (hour <= 6 && minute < 30)) {
-    if (!digitalRead(EASTLIGHT)) {
+  if ((hour >= 18 && minute >= 30) || (hour <= 7 && minute < 30)) {
       digitalWrite(EASTLIGHT, HIGH);
-    }
-
-    if (!digitalRead(WESTLIGHT)) {
       digitalWrite(WESTLIGHT, HIGH);
-    }
 
-  } else if (hour >= 6 && minute >= 30) {
+
+  } else if (hour >= 7 && minute >= 30) {
     // Normal street light operation based on LUX data
     if (avgEast <= 200) { // East
       digitalWrite(EASTLIGHT, HIGH);
@@ -362,14 +358,14 @@ TASK(DisplayTask) {
 
   // 2. Paint shade on/off data of East, West to LCD row 2
   lcd.setCursor(0, 1);
-  sprintf(msg, "SHADE : E-%s W-%s", eastContracted ? "ON " : "OFF",
-          westContracted ? "ON " : "OFF");
+  sprintf(msg, "SHADE : W-%s E-%s", westContracted ? "OFF" : "ON ",
+          eastContracted ? "OFF" : "ON ");
   lcd.print(msg);
 
   // 3. Paint street light on/off data of East, West to LCD row 3
   lcd.setCursor(0, 2);
-  sprintf(msg, "LIGHT : E-%s W-%s", digitalRead(EASTLIGHT) ? "ON " : "OFF",
-          digitalRead(WESTLIGHT) ? "ON " : "OFF");
+  sprintf(msg, "LIGHT : W-%s E-%s", digitalRead(WESTLIGHT) ? "ON " : "OFF",
+          digitalRead(EASTLIGHT) ? "ON " : "OFF");
   lcd.print(msg);
 
   if (isNewTime) {

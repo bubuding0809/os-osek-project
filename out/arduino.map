@@ -758,7 +758,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x3cda
+.text           0x0000000000000000     0x3cc2
  *(.vectors)
  .vectors       0x0000000000000000       0x68 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000000                __vectors
@@ -960,351 +960,351 @@ END GROUP
  .text.getLux   0x0000000000000e66       0x76 obj/task.cpp.o
                 0x0000000000000e66                getLux
  .text.FuncDetectTask
-                0x0000000000000edc      0x452 obj/task.cpp.o
+                0x0000000000000edc      0x43a obj/task.cpp.o
                 0x0000000000000edc                FuncDetectTask
  .text.startup._GLOBAL__sub_I_eastServo
-                0x000000000000132e       0x36 obj/task.cpp.o
+                0x0000000000001316       0x36 obj/task.cpp.o
  .text.__vector_16
-                0x0000000000001364       0x94 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring.c.o)
-                0x0000000000001364                __vector_16
+                0x000000000000134c       0x94 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring.c.o)
+                0x000000000000134c                __vector_16
  .text.delayMicroseconds
-                0x00000000000013f8       0x16 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring.c.o)
-                0x00000000000013f8                delayMicroseconds
- .text.init     0x000000000000140e       0x76 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring.c.o)
-                0x000000000000140e                init
+                0x00000000000013e0       0x16 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring.c.o)
+                0x00000000000013e0                delayMicroseconds
+ .text.init     0x00000000000013f6       0x76 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring.c.o)
+                0x00000000000013f6                init
  .text.turnOffPWM
-                0x0000000000001484       0x52 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
- .text.pinMode  0x00000000000014d6       0x78 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
-                0x00000000000014d6                pinMode
+                0x000000000000146c       0x52 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
+ .text.pinMode  0x00000000000014be       0x78 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
+                0x00000000000014be                pinMode
  .text.digitalWrite
-                0x000000000000154e       0x5c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
-                0x000000000000154e                digitalWrite
+                0x0000000000001536       0x5c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
+                0x0000000000001536                digitalWrite
  .text.digitalRead
-                0x00000000000015aa       0x52 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
-                0x00000000000015aa                digitalRead
+                0x0000000000001592       0x52 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_digital.c.o)
+                0x0000000000001592                digitalRead
  .text.analogRead
-                0x00000000000015fc       0x36 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_analog.c.o)
-                0x00000000000015fc                analogRead
+                0x00000000000015e4       0x36 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(wiring_analog.c.o)
+                0x00000000000015e4                analogRead
  .text._ZN14HardwareSerial9availableEv
-                0x0000000000001632       0x18 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x0000000000001632                _ZN14HardwareSerial9availableEv
+                0x000000000000161a       0x18 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x000000000000161a                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x000000000000164a       0x1c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x000000000000164a                _ZN14HardwareSerial4peekEv
+                0x0000000000001632       0x1c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x0000000000001632                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x0000000000001666       0x28 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x0000000000001666                _ZN14HardwareSerial4readEv
+                0x000000000000164e       0x28 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x000000000000164e                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x000000000000168e       0x1e /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x000000000000168e                _ZN14HardwareSerial17availableForWriteEv
+                0x0000000000001676       0x1e /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x0000000000001676                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x00000000000016ac       0x1c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x00000000000016ac                _Z14serialEventRunv
+                0x0000000000001694       0x1c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x0000000000001694                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x00000000000016c8       0x44 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x00000000000016c8                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x00000000000016b0       0x44 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00000000000016b0                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5flushEv
-                0x000000000000170c       0x40 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x000000000000170c                _ZN14HardwareSerial5flushEv
+                0x00000000000016f4       0x40 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00000000000016f4                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5writeEh
-                0x000000000000174c       0x9a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x000000000000174c                _ZN14HardwareSerial5writeEh
+                0x0000000000001734       0x9a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x0000000000001734                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5beginEmh
-                0x00000000000017e6       0xc4 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
-                0x00000000000017e6                _ZN14HardwareSerial5beginEmh
+                0x00000000000017ce       0xc4 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00000000000017ce                _ZN14HardwareSerial5beginEmh
  .text.__vector_18
-                0x00000000000018aa       0x64 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
-                0x00000000000018aa                __vector_18
+                0x0000000000001892       0x64 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x0000000000001892                __vector_18
  .text.__vector_19
-                0x000000000000190e       0x4c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
-                0x000000000000190e                __vector_19
+                0x00000000000018f6       0x4c /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x00000000000018f6                __vector_19
  .text._Z17Serial0_availablev
-                0x000000000000195a       0x14 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
-                0x000000000000195a                _Z17Serial0_availablev
+                0x0000000000001942       0x14 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x0000000000001942                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x000000000000196e       0x5a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x0000000000001956       0x5a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(HardwareSerial0.cpp.o)
  .text._ZN5Print5writeEPKhj
-                0x00000000000019c8       0x5a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x00000000000019c8                _ZN5Print5writeEPKhj
+                0x00000000000019b0       0x5a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x00000000000019b0                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc.part.2
-                0x0000000000001a22       0x1e /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001a0a       0x1e /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
  .text._ZN5Print5printEPKc
-                0x0000000000001a40       0x10 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001a40                _ZN5Print5printEPKc
+                0x0000000000001a28       0x10 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001a28                _ZN5Print5printEPKc
  .text._ZN5Print5printEc
-                0x0000000000001a50        0xe /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001a50                _ZN5Print5printEc
+                0x0000000000001a38        0xe /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001a38                _ZN5Print5printEc
  .text._ZN5Print7printlnEv
-                0x0000000000001a5e        0x8 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001a5e                _ZN5Print7printlnEv
+                0x0000000000001a46        0x8 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001a46                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPKc
-                0x0000000000001a66       0x2e /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001a66                _ZN5Print7printlnEPKc
+                0x0000000000001a4e       0x2e /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001a4e                _ZN5Print7printlnEPKc
  .text._ZN5Print11printNumberEmh
-                0x0000000000001a94       0x98 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001a94                _ZN5Print11printNumberEmh
+                0x0000000000001a7c       0x98 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001a7c                _ZN5Print11printNumberEmh
  .text._ZN5Print5printEli
-                0x0000000000001b2c       0x90 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001b2c                _ZN5Print5printEli
+                0x0000000000001b14       0x90 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001b14                _ZN5Print5printEli
  .text._ZN5Print5printEii
-                0x0000000000001bbc        0xe /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001bbc                _ZN5Print5printEii
+                0x0000000000001ba4        0xe /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001ba4                _ZN5Print5printEii
  .text._ZN5Print7printlnEii
-                0x0000000000001bca       0x24 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001bca                _ZN5Print7printlnEii
+                0x0000000000001bb2       0x24 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001bb2                _ZN5Print7printlnEii
  .text._ZN5Print5printEmi
-                0x0000000000001bee       0x1a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001bee                _ZN5Print5printEmi
+                0x0000000000001bd6       0x1a /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001bd6                _ZN5Print5printEmi
  .text._ZN5Print5printEji
-                0x0000000000001c08        0xc /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001c08                _ZN5Print5printEji
+                0x0000000000001bf0        0xc /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001bf0                _ZN5Print5printEji
  .text._ZN5Print10printFloatEdh
-                0x0000000000001c14      0x1c8 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001c14                _ZN5Print10printFloatEdh
+                0x0000000000001bfc      0x1c8 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001bfc                _ZN5Print10printFloatEdh
  .text._ZN5Print7printlnEdi
-                0x0000000000001ddc       0x24 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
-                0x0000000000001ddc                _ZN5Print7printlnEdi
+                0x0000000000001dc4       0x24 /home/user/git/os-osek-project/erika/lib/libarduinosdk.a(Print.cpp.o)
+                0x0000000000001dc4                _ZN5Print7printlnEdi
  .text.osEE_check_disableint
-                0x0000000000001e00       0x24 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x0000000000001de8       0x24 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
  .text.osEE_call_error_hook
-                0x0000000000001e24       0x34 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
- .text.StartOS  0x0000000000001e58      0x1e6 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
-                0x0000000000001e58                StartOS
+                0x0000000000001e0c       0x34 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+ .text.StartOS  0x0000000000001e40      0x1e6 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x0000000000001e40                StartOS
  .text.TerminateTask
-                0x000000000000203e       0x64 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
-                0x000000000000203e                TerminateTask
+                0x0000000000002026       0x64 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x0000000000002026                TerminateTask
  .text.WaitEvent
-                0x00000000000020a2      0x10e /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
-                0x00000000000020a2                WaitEvent
+                0x000000000000208a      0x10e /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x000000000000208a                WaitEvent
  .text.SetEvent
-                0x00000000000021b0      0x128 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
-                0x00000000000021b0                SetEvent
+                0x0000000000002198      0x128 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x0000000000002198                SetEvent
  .text.GetEvent
-                0x00000000000022d8       0xea /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
-                0x00000000000022d8                GetEvent
+                0x00000000000022c0       0xea /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x00000000000022c0                GetEvent
  .text.ClearEvent
-                0x00000000000023c2       0x8c /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
-                0x00000000000023c2                ClearEvent
+                0x00000000000023aa       0x8c /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x00000000000023aa                ClearEvent
  .text.osEE_get_service_id
-                0x000000000000244e        0xe /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
-                0x000000000000244e                osEE_get_service_id
+                0x0000000000002436        0xe /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_api_osek.c.o)
+                0x0000000000002436                osEE_get_service_id
  .text.osEE_scheduler_task_end
-                0x000000000000245c       0x30 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
-                0x000000000000245c                osEE_scheduler_task_end
+                0x0000000000002444       0x30 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
+                0x0000000000002444                osEE_scheduler_task_end
  .text.osEE_scheduler_task_wrapper_restore
-                0x000000000000248c       0x2c /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
-                0x000000000000248c                osEE_scheduler_task_wrapper_restore
+                0x0000000000002474       0x2c /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
+                0x0000000000002474                osEE_scheduler_task_wrapper_restore
  .text.osEE_scheduler_task_wrapper_run
-                0x00000000000024b8       0x28 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
-                0x00000000000024b8                osEE_scheduler_task_wrapper_run
+                0x00000000000024a0       0x28 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
+                0x00000000000024a0                osEE_scheduler_task_wrapper_run
  .text.osEE_idle_hook_wrapper
-                0x00000000000024e0       0x54 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
-                0x00000000000024e0                osEE_idle_hook_wrapper
+                0x00000000000024c8       0x54 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_entry_points.c.o)
+                0x00000000000024c8                osEE_idle_hook_wrapper
  .text.osEE_scheduler_core_rq_preempt_stk
-                0x0000000000002534       0xae /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
-                0x0000000000002534                osEE_scheduler_core_rq_preempt_stk
+                0x000000000000251c       0xae /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
+                0x000000000000251c                osEE_scheduler_core_rq_preempt_stk
  .text.osEE_sn_priority_insert
-                0x00000000000025e2       0xaa /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
-                0x00000000000025e2                osEE_sn_priority_insert
+                0x00000000000025ca       0xaa /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
+                0x00000000000025ca                osEE_sn_priority_insert
  .text.osEE_scheduler_rq_insert
-                0x000000000000268c        0xe /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
-                0x000000000000268c                osEE_scheduler_rq_insert
+                0x0000000000002674        0xe /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
+                0x0000000000002674                osEE_scheduler_rq_insert
  .text.osEE_scheduler_core_pop_running
-                0x000000000000269a       0x54 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
-                0x000000000000269a                osEE_scheduler_core_pop_running
+                0x0000000000002682       0x54 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_scheduler.c.o)
+                0x0000000000002682                osEE_scheduler_core_pop_running
  .text.osEE_scheduler_task_activated
-                0x00000000000026ee       0xd4 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
-                0x00000000000026ee                osEE_scheduler_task_activated
+                0x00000000000026d6       0xd4 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
+                0x00000000000026d6                osEE_scheduler_task_activated
  .text.osEE_scheduler_task_block_current
-                0x00000000000027c2       0x4a /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
-                0x00000000000027c2                osEE_scheduler_task_block_current
+                0x00000000000027aa       0x4a /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
+                0x00000000000027aa                osEE_scheduler_task_block_current
  .text.osEE_scheduler_task_unblocked
-                0x000000000000280c       0x64 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
-                0x000000000000280c                osEE_scheduler_task_unblocked
+                0x00000000000027f4       0x64 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
+                0x00000000000027f4                osEE_scheduler_task_unblocked
  .text.osEE_scheduler_task_terminated
-                0x0000000000002870       0xfa /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
-                0x0000000000002870                osEE_scheduler_task_terminated
+                0x0000000000002858       0xfa /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
+                0x0000000000002858                osEE_scheduler_task_terminated
  .text.osEE_scheduler_task_preemption_point
-                0x000000000000296a       0x32 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
-                0x000000000000296a                osEE_scheduler_task_preemption_point
+                0x0000000000002952       0x32 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
+                0x0000000000002952                osEE_scheduler_task_preemption_point
  .text.osEE_scheduler_task_set_running
-                0x000000000000299c       0x50 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
-                0x000000000000299c                osEE_scheduler_task_set_running
+                0x0000000000002984       0x50 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_sched_partitioned.c.o)
+                0x0000000000002984                osEE_scheduler_task_set_running
  .text.osEE_alarm_set_rel
-                0x00000000000029ec       0x22 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_alarm.c.o)
-                0x00000000000029ec                osEE_alarm_set_rel
+                0x00000000000029d4       0x22 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_alarm.c.o)
+                0x00000000000029d4                osEE_alarm_set_rel
  .text.__vector_default
-                0x0000000000002a0e        0x4 /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_intvect.c.o)
-                0x0000000000002a0e                __vector_default
-                0x0000000000002a0e                tag___vector_default
+                0x00000000000029f6        0x4 /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_intvect.c.o)
+                0x00000000000029f6                __vector_default
+                0x00000000000029f6                tag___vector_default
  .text.osEE_atmega_intvect
-                0x0000000000002a12        0x4 /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_intvect.c.o)
-                0x0000000000002a12                osEE_atmega_intvect
+                0x00000000000029fa        0x4 /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_intvect.c.o)
+                0x00000000000029fa                osEE_atmega_intvect
  .text.__vector_11
-                0x0000000000002a16       0x10 /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_intvect.c.o)
-                0x0000000000002a16                __vector_11
-                0x0000000000002a16                tag___vector_11
+                0x00000000000029fe       0x10 /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_intvect.c.o)
+                0x00000000000029fe                __vector_11
+                0x00000000000029fe                tag___vector_11
  .text.osEE_avr8_isr2_stub
-                0x0000000000002a26       0x6c /home/user/git/os-osek-project/erika/lib/libee.a(ee_avr8_irqstub.c.o)
-                0x0000000000002a26                osEE_avr8_isr2_stub
+                0x0000000000002a0e       0x6c /home/user/git/os-osek-project/erika/lib/libee.a(ee_avr8_irqstub.c.o)
+                0x0000000000002a0e                osEE_avr8_isr2_stub
  .text.osEE_avr8_system_timer_init
-                0x0000000000002a92        0xc /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_system_timer.c.o)
-                0x0000000000002a92                osEE_avr8_system_timer_init
+                0x0000000000002a7a        0xc /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_system_timer.c.o)
+                0x0000000000002a7a                osEE_avr8_system_timer_init
  .text.osEE_avr8_system_timer_handler
-                0x0000000000002a9e        0xc /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_system_timer.c.o)
-                0x0000000000002a9e                osEE_avr8_system_timer_handler
+                0x0000000000002a86        0xc /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_system_timer.c.o)
+                0x0000000000002a86                osEE_avr8_system_timer_handler
  .text.osEE_change_context_from_running
-                0x0000000000002aaa       0x36 /home/user/git/os-osek-project/erika/lib/libee.a(ee_std_change_context.c.o)
-                0x0000000000002aaa                osEE_change_context_from_running
+                0x0000000000002a92       0x36 /home/user/git/os-osek-project/erika/lib/libee.a(ee_std_change_context.c.o)
+                0x0000000000002a92                osEE_change_context_from_running
  .text.osEE_change_context_from_task_end
-                0x0000000000002ae0       0x2c /home/user/git/os-osek-project/erika/lib/libee.a(ee_std_change_context.c.o)
-                0x0000000000002ae0                osEE_change_context_from_task_end
+                0x0000000000002ac8       0x2c /home/user/git/os-osek-project/erika/lib/libee.a(ee_std_change_context.c.o)
+                0x0000000000002ac8                osEE_change_context_from_task_end
  .text.osEE_idle_task_terminate
-                0x0000000000002b0c       0x36 /home/user/git/os-osek-project/erika/lib/libee.a(ee_std_change_context.c.o)
-                0x0000000000002b0c                osEE_idle_task_terminate
+                0x0000000000002af4       0x36 /home/user/git/os-osek-project/erika/lib/libee.a(ee_std_change_context.c.o)
+                0x0000000000002af4                osEE_idle_task_terminate
  .text.osEE_counter_insert_abs_trigger
-                0x0000000000002b42       0x96 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_counter.c.o)
-                0x0000000000002b42                osEE_counter_insert_abs_trigger
+                0x0000000000002b2a       0x96 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_counter.c.o)
+                0x0000000000002b2a                osEE_counter_insert_abs_trigger
  .text.osEE_counter_insert_rel_trigger
-                0x0000000000002bd8       0x40 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_counter.c.o)
-                0x0000000000002bd8                osEE_counter_insert_rel_trigger
+                0x0000000000002bc0       0x40 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_counter.c.o)
+                0x0000000000002bc0                osEE_counter_insert_rel_trigger
  .text.osEE_counter_increment
-                0x0000000000002c18      0x272 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_counter.c.o)
-                0x0000000000002c18                osEE_counter_increment
+                0x0000000000002c00      0x272 /home/user/git/os-osek-project/erika/lib/libee.a(ee_oo_counter.c.o)
+                0x0000000000002c00                osEE_counter_increment
  .text.OsEE_atmega_startTimer1
-                0x0000000000002e8a       0xbc /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_timer1ctc.c.o)
-                0x0000000000002e8a                OsEE_atmega_startTimer1
+                0x0000000000002e72       0xbc /home/user/git/os-osek-project/erika/lib/libee.a(ee_atmega_timer1ctc.c.o)
+                0x0000000000002e72                OsEE_atmega_startTimer1
  .text.avr-libc.fplib
-                0x0000000000002f46        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
-                0x0000000000002f46                __subsf3
-                0x0000000000002f48                __addsf3
+                0x0000000000002f2e        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x0000000000002f2e                __subsf3
+                0x0000000000002f30                __addsf3
  .text.avr-libc.fplib
-                0x0000000000002f54       0xcc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
-                0x0000000000002f76                __addsf3x
+                0x0000000000002f3c       0xcc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x0000000000002f5e                __addsf3x
  .text.avr-libc.fplib
-                0x0000000000003020        0xa /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
-                0x0000000000003020                __lesf2
-                0x0000000000003020                __nesf2
-                0x0000000000003020                __eqsf2
-                0x0000000000003020                __cmpsf2
-                0x0000000000003020                __ltsf2
+                0x0000000000003008        0xa /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                0x0000000000003008                __lesf2
+                0x0000000000003008                __nesf2
+                0x0000000000003008                __eqsf2
+                0x0000000000003008                __cmpsf2
+                0x0000000000003008                __ltsf2
  .text.avr-libc.fplib
-                0x000000000000302a        0x8 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
-                0x000000000000302a                __divsf3
+                0x0000000000003012        0x8 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                0x0000000000003012                __divsf3
  .text.avr-libc.fplib
-                0x0000000000003032       0xdc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
-                0x0000000000003052                __divsf3x
-                0x0000000000003058                __divsf3_pse
+                0x000000000000301a       0xdc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                0x000000000000303a                __divsf3x
+                0x0000000000003040                __divsf3_pse
  .text.avr-libc.fplib
-                0x000000000000310e        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
-                0x000000000000310e                __fixsfsi
+                0x00000000000030f6        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                0x00000000000030f6                __fixsfsi
  .text.avr-libc.fplib
-                0x000000000000311c       0x5e /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
-                0x000000000000311c                __fixunssfsi
+                0x0000000000003104       0x5e /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x0000000000003104                __fixunssfsi
  .text.avr-libc.fplib
-                0x000000000000317a       0x7a /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
-                0x000000000000317a                __floatunsisf
-                0x000000000000317e                __floatsisf
+                0x0000000000003162       0x7a /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x0000000000003162                __floatunsisf
+                0x0000000000003166                __floatsisf
  .text.avr-libc.fplib
-                0x00000000000031f4       0x48 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
-                0x00000000000031f4                __fp_cmp
+                0x00000000000031dc       0x48 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                0x00000000000031dc                __fp_cmp
  .text.avr-libc.fplib
-                0x000000000000323c        0xc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
-                0x000000000000323c                __fp_inf
+                0x0000000000003224        0xc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x0000000000003224                __fp_inf
  .text.avr-libc.fplib
-                0x0000000000003248        0x6 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
-                0x0000000000003248                __fp_nan
+                0x0000000000003230        0x6 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x0000000000003230                __fp_nan
  .text.avr-libc.fplib
-                0x000000000000324e        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
-                0x000000000000324e                __fp_pscA
+                0x0000000000003236        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x0000000000003236                __fp_pscA
  .text.avr-libc.fplib
-                0x000000000000325c        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
-                0x000000000000325c                __fp_pscB
+                0x0000000000003244        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x0000000000003244                __fp_pscB
  .text.avr-libc.fplib
-                0x000000000000326a       0x22 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
-                0x000000000000326a                __fp_round
+                0x0000000000003252       0x22 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x0000000000003252                __fp_round
  .text.avr-libc.fplib
-                0x000000000000328c       0x44 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
-                0x000000000000328c                __fp_split3
-                0x000000000000329c                __fp_splitA
+                0x0000000000003274       0x44 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000000000003274                __fp_split3
+                0x0000000000003284                __fp_splitA
  .text.avr-libc.fplib
-                0x00000000000032d0        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
-                0x00000000000032d0                __fp_zero
-                0x00000000000032d2                __fp_szero
+                0x00000000000032b8        0xe /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x00000000000032b8                __fp_zero
+                0x00000000000032ba                __fp_szero
  .text.avr-libc.fplib
-                0x00000000000032de        0xa /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
-                0x00000000000032de                __gtsf2
-                0x00000000000032de                __gesf2
+                0x00000000000032c6        0xa /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                0x00000000000032c6                __gtsf2
+                0x00000000000032c6                __gesf2
  .text.avr-libc.fplib
-                0x00000000000032e8        0x8 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
-                0x00000000000032e8                __mulsf3
+                0x00000000000032d0        0x8 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x00000000000032d0                __mulsf3
  .text.avr-libc.fplib
-                0x00000000000032f0       0xd2 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
-                0x000000000000330e                __mulsf3x
-                0x0000000000003314                __mulsf3_pse
+                0x00000000000032d8       0xd2 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x00000000000032f6                __mulsf3x
+                0x00000000000032fc                __mulsf3_pse
  .text.avr-libc.fplib
-                0x00000000000033c2       0xa0 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(pow.o)
-                0x00000000000033c2                pow
+                0x00000000000033aa       0xa0 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(pow.o)
+                0x00000000000033aa                pow
  .text.avr-libc.fplib
-                0x0000000000003462        0xa /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(unordsf2.o)
-                0x0000000000003462                __unordsf2
+                0x000000000000344a        0xa /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(unordsf2.o)
+                0x000000000000344a                __unordsf2
  .text.avr-libc.fplib
-                0x000000000000346c       0x74 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(exp.o)
-                0x000000000000347c                exp
+                0x0000000000003454       0x74 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(exp.o)
+                0x0000000000003464                exp
  .text.avr-libc.fplib
-                0x00000000000034e0       0x4e /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_powser.o)
-                0x00000000000034e0                __fp_powser
+                0x00000000000034c8       0x4e /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_powser.o)
+                0x00000000000034c8                __fp_powser
  .text.avr-libc.fplib
-                0x000000000000352e       0x10 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(inverse.o)
-                0x000000000000352e                inverse
+                0x0000000000003516       0x10 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(inverse.o)
+                0x0000000000003516                inverse
  .text.avr-libc.fplib
-                0x000000000000353e       0x74 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(ldexp.o)
-                0x0000000000003546                ldexp
+                0x0000000000003526       0x74 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(ldexp.o)
+                0x000000000000352e                ldexp
  .text.avr-libc.fplib
-                0x00000000000035b2       0xa0 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(log.o)
-                0x00000000000035c2                log
+                0x000000000000359a       0xa0 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(log.o)
+                0x00000000000035aa                log
  .text.avr-libc.fplib
-                0x0000000000003652       0x68 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(modf.o)
-                0x0000000000003652                modff
-                0x0000000000003652                modf
+                0x000000000000363a       0x68 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(modf.o)
+                0x000000000000363a                modff
+                0x000000000000363a                modf
  .text.avr-libc.fplib
-                0x00000000000036ba       0x1c /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mpack.o)
-                0x00000000000036ba                __fp_mpack
-                0x00000000000036be                __fp_mpack_finite
+                0x00000000000036a2       0x1c /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mpack.o)
+                0x00000000000036a2                __fp_mpack
+                0x00000000000036a6                __fp_mpack_finite
  .text.libgcc.div
-                0x00000000000036d6       0x44 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x00000000000036d6                __udivmodsi4
- .text.libgcc   0x000000000000371a        0xc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_tablejump2.o)
-                0x000000000000371a                __tablejump2__
+                0x00000000000036be       0x44 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x00000000000036be                __udivmodsi4
+ .text.libgcc   0x0000000000003702        0xc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000000000003702                __tablejump2__
  .text.avr-libc
-                0x0000000000003726       0x46 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
-                0x0000000000003726                sprintf
+                0x000000000000370e       0x46 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                0x000000000000370e                sprintf
  .text.avr-libc
-                0x000000000000376c      0x3b4 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
-                0x000000000000376c                vfprintf
+                0x0000000000003754      0x3b4 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x0000000000003754                vfprintf
  .text.avr-libc
-                0x0000000000003b20       0x16 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
-                0x0000000000003b20                strnlen_P
+                0x0000000000003b08       0x16 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x0000000000003b08                strnlen_P
  .text.avr-libc
-                0x0000000000003b36       0x16 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
-                0x0000000000003b36                strnlen
+                0x0000000000003b1e       0x16 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x0000000000003b1e                strnlen
  .text.avr-libc
-                0x0000000000003b4c       0x60 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(fputc.o)
-                0x0000000000003b4c                fputc
+                0x0000000000003b34       0x60 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+                0x0000000000003b34                fputc
  .text.avr-libc
-                0x0000000000003bac       0xbc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
-                0x0000000000003bac                __ultoa_invert
+                0x0000000000003b94       0xbc /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x0000000000003b94                __ultoa_invert
  .text.libgcc.prologue
-                0x0000000000003c68       0x38 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
-                0x0000000000003c68                __prologue_saves__
+                0x0000000000003c50       0x38 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_prologue.o)
+                0x0000000000003c50                __prologue_saves__
  .text.libgcc.prologue
-                0x0000000000003ca0       0x36 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
-                0x0000000000003ca0                __epilogue_restores__
-                0x0000000000003cd6                . = ALIGN (0x2)
+                0x0000000000003c88       0x36 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_epilogue.o)
+                0x0000000000003c88                __epilogue_restores__
+                0x0000000000003cbe                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000003cd6        0x0 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
-                0x0000000000003cd6                exit
-                0x0000000000003cd6                _exit
+ .fini9         0x0000000000003cbe        0x0 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+                0x0000000000003cbe                exit
+                0x0000000000003cbe                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1323,11 +1323,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000003cd6        0x4 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000003cbe        0x4 /home/user/arduino-1.8.15/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000003cda                _etext = .
+                0x0000000000003cc2                _etext = .
 
-.data           0x0000000000800100      0x3ba load address 0x0000000000003cda
+.data           0x0000000000800100      0x3ba load address 0x0000000000003cc2
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -1504,8 +1504,8 @@ END GROUP
                 0x000000000080065b                counter_cb_array
                 0x000000000080065f                res_cb_array
                 0x0000000000800664                PROVIDE (__bss_end, .)
-                0x0000000000003cda                __data_load_start = LOADADDR (.data)
-                0x0000000000004094                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000003cc2                __data_load_start = LOADADDR (.data)
+                0x000000000000407c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0000000000800664        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)

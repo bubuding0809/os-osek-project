@@ -3433,8 +3433,8 @@ bool westContracted = false;
 int countEast = 0, countWest =0;
 
 
-int hour = 6;
-int minute = 29;
+int hour = 07;
+int minute = 20;
 int second = 55;
 bool isNewTime = false;
 
@@ -3502,16 +3502,12 @@ void FuncDetectTask ( void ) {
    }
 
 
-  if ((hour >= 18 && minute >= 30) || (hour <= 6 && minute < 30)) {
-    if (!digitalRead((3))) {
+  if ((hour >= 18 && minute >= 30) || (hour <= 7 && minute < 30)) {
       digitalWrite((3), 0x1);
-    }
-
-    if (!digitalRead((7))) {
       digitalWrite((7), 0x1);
-    }
 
-  } else if (hour >= 6 && minute >= 30) {
+
+  } else if (hour >= 7 && minute >= 30) {
 
     if (avgEast <= 200) {
       digitalWrite((3), 0x1);
@@ -3649,7 +3645,7 @@ void FuncToggleServoTask ( void ) {
 
   TerminateTask();
 }
-# 351 "/home/user/git/os-osek-project/task.cpp"
+# 347 "/home/user/git/os-osek-project/task.cpp"
 void FuncDisplayTask ( void ) {
 
 
@@ -3664,14 +3660,14 @@ void FuncDisplayTask ( void ) {
 
 
   lcd.setCursor(0, 1);
-  sprintf(msg, "SHADE : E-%s W-%s", eastContracted ? "ON " : "OFF",
-          westContracted ? "ON " : "OFF");
+  sprintf(msg, "SHADE : W-%s E-%s", westContracted ? "OFF" : "ON ",
+          eastContracted ? "OFF" : "ON ");
   lcd.print(msg);
 
 
   lcd.setCursor(0, 2);
-  sprintf(msg, "LIGHT : E-%s W-%s", digitalRead((3)) ? "ON " : "OFF",
-          digitalRead((7)) ? "ON " : "OFF");
+  sprintf(msg, "LIGHT : W-%s E-%s", digitalRead((7)) ? "ON " : "OFF",
+          digitalRead((3)) ? "ON " : "OFF");
   lcd.print(msg);
 
   if (isNewTime) {
