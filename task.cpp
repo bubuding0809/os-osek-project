@@ -66,8 +66,7 @@ extern "C" {
 
 /* External Functions */
 extern void serial_print(char const *msg);
-extern void populateMovingAverage(int *maIndex, int *maRaw, float *maLux,
-                                  int LDR_PIN);
+extern void populateMovingAverage(int *maIndex, float *maLux, int LDR_PIN);
 extern float getLux(int dataRaw);
 extern float getAverage(float *data, int size);
 
@@ -99,8 +98,6 @@ LiquidCrystal lcd(RS, EN, D4, D5, D6,
                   D7); // LCD - Construct lcd object, pins see hw_pins.h
 
 // Initialize moving average array for east and west
-int dataRawEast[3] = {-2000, -2000, -2000};
-int dataRawWest[3] = {-2000, -2000, -2000};
 float dataLuxEast[3] = {0, 0, 0};
 float dataLuxWest[3] = {0, 0, 0};
 
@@ -116,25 +113,34 @@ bool westContracted = false;
 int countEast = 0, countWest = 0;
 
 // 24Hr clock
-int hour = 07;
-int minute = 20;
-int second = 55;
+int hours = 07;
+int minutes = 20;
+int seconds = 55;
 bool isNewTime = false;
 
 /*************************************************************
  *  \Function	ClockTask
  *  \brief
+ *  Clock task to keep track of time
+ *  \details
+ *  This task is used to keep track of time and update the
+ *  global variables for hours, minutes and seconds.
+ *  It also sets the isNewTime flag to true when the time
+ *  changes.
+ *  \note
+ * This task is activated every 1 second.
+ *
  *************************************************************/
 TASK(ClockTask) {
-  second++;
-  if (second == 60) {
-    second = 0;
-    minute++;
-    if (minute == 60) {
-      minute = 0;
-      hour++;
-      if (hour == 24) {
-        hour = 0;
+  seconds++;
+  if (seconds == 60) {
+    seconds = 0;
+    minutes++;
+    if (minutes == 60) {
+      minutes = 0;
+      hours++;
+      if (hours == 24) {
+        hours = 0;
       }
     }
   }
@@ -144,23 +150,31 @@ TASK(ClockTask) {
 /*************************************************************
  *  \Function	DetectTask
  *  \brief
+ *  Detect task to detect LDR sensor data to control street light and servo
+ *  \details
+ *  Detect task to detect LDR sensor data to populate a moving average array.
+ *  Using the moving average array, it calculates a 3 seconds moving average lux
+ *value. This task also controls the street light operation based on the lux
+ *value. this task also controls the servo operation based on the lux value.
+ *  \note
+ *  This task is activated every 1 second.
  *************************************************************/
 TASK(DetectTask) {
   // Populate the moving average array and get the average for east
-  populateMovingAverage(&countEast, dataRawEast, dataLuxEast, EASTDETECT);
+  populateMovingAverage(&countEast, dataLuxEast, EASTDETECT);
   avgEast = getAverage(dataLuxEast, MOVING_AVERAGE_SIZE);
   Serial.print("Avg east lux: " + String(avgEast));
 
   // Populate the moving average array and get the average for west
-  populateMovingAverage(&countWest, dataRawWest, dataLuxWest, WESTDETECT);
+  populateMovingAverage(&countWest, dataLuxWest, WESTDETECT);
   avgWest = getAverage(dataLuxWest, MOVING_AVERAGE_SIZE);
   Serial.print("Avg west lux: " + String(avgWest));
 
   // Street light operation based on clock time during the night
-  if ((hour >= 18 && minute >= 30) || (hour <= 7 && minute < 30)) {
+  if ((hours >= 18 && minutes >= 30) || (hours <= 7 && minutes < 30)) {
     digitalWrite(EASTLIGHT, HIGH);
     digitalWrite(WESTLIGHT, HIGH);
-  } else if (hour >= 7 && minute >= 30) {
+  } else if (hours >= 7 && minutes >= 30) {
     // Normal street light operation based on LUX data
     if (avgEast <= 200) { // East
       digitalWrite(EASTLIGHT, HIGH);
@@ -198,6 +212,11 @@ TASK(DetectTask) {
 /*************************************************************
  *  \Function	ToggleServoTask
  *  \brief
+ *  Toggle servo task to toggle the servo motor
+ *  \details
+ *  This task waits for the event to be set and then toggles the servo motor
+ *  Depending on the event it will either expand or contract the shade at east
+ *or west side \note This task is activated via eventing management
  *************************************************************/
 TASK(ToggleServoTask) {
   EventMaskType mask;
@@ -251,6 +270,14 @@ TASK(ToggleServoTask) {
 /*************************************************************
  *  \Function	DisplayTask
  *  \brief
+ *  Display task to display the data on the LCD
+ *  \details
+ *  This task displays the lux data of east, west and average on row 1
+ *  This task displays the shade on/off data of east, west on row 2
+ *  This task displays the street light on/off data of east, west on row 3
+ *  This task displays the clock time on row 4
+ *  \note
+ *  This task is activated every 1 second.
  *
  *************************************************************/
 TASK(DisplayTask) {
@@ -278,7 +305,7 @@ TASK(DisplayTask) {
   // 4. Paint clock data to LCD row 4
   if (isNewTime) {
     lcd.setCursor(0, 3);
-    sprintf(msg, "CLOCK : %02d:%02d:%02d%", hour, minute, second);
+    sprintf(msg, "CLOCK : %02d:%02d:%02d%", hours, minutes, seconds);
     lcd.print(msg);
   }
 
@@ -286,7 +313,7 @@ TASK(DisplayTask) {
 }
 
 /* ************************************************************** */
-/* Help functions that is called by different tasks*/
+/* Helper functions that is called by different tasks*/
 
 // Function to convert raw data to LUX data
 float getLux(int dataRaw) {
@@ -312,8 +339,7 @@ float getAverage(float *data, int size) {
 }
 
 // Function to populate the moving average array
-void populateMovingAverage(int *maIndex, int *maRaw, float *maLux,
-                           int LDR_PIN) {
+void populateMovingAverage(int *maIndex, float *maLux, int LDR_PIN) {
   if (*maIndex < MOVING_AVERAGE_SIZE) {
     // populate moving average
     maRaw[*maIndex] = analogRead(LDR_PIN);

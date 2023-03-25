@@ -163,6 +163,8 @@ CPU mySystem {
     SECONDSPERTICK = 0.001;
   };
 
+  // AlarmTaskDetect is activated every 1 second and activates the DetectTask
+  // It is autostarted upon system startup
   ALARM  AlarmTaskDetect {
     COUNTER = SystemTimer;
     ACTION = ACTIVATETASK {
@@ -174,6 +176,8 @@ CPU mySystem {
     };
   };
 
+  // AlarmTaskDisplay is activated every 1 second and activates the DisplayTask
+  // It is autostarted upon system startup
   ALARM AlarmTaskDisplay {
     COUNTER = SystemTimer;
     ACTION = ACTIVATETASK {
@@ -181,10 +185,12 @@ CPU mySystem {
     };
     AUTOSTART = TRUE {
       ALARMTIME = 0;
-      CYCLETIME = 100;
+      CYCLETIME = 1000;
     };
   };
   
+  // AlarmTaskClock is activated every 1 second and activates the ClockTask
+  // It is autostarted upon system startup
   ALARM AlarmTaskClock {
   	COUNTER = SystemTimer;
   	ACTION = ACTIVATETASK {
@@ -192,7 +198,7 @@ CPU mySystem {
   	};
   	AUTOSTART = TRUE {
   		ALARMTIME = 0;
-  		CYCLETIME = 100;
+  		CYCLETIME = 1000;
   	};
   };
 };
