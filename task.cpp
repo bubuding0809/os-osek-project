@@ -66,9 +66,10 @@ extern "C" {
 
 /* External Functions */
 extern void serial_print(char const *msg);
+extern void populateMovingAverage(int *maIndex, int *maRaw, float *maLux,
+                                  int LDR_PIN);
 extern float getLux(int dataRaw);
-extern float populateMovingAverage(float dataRaw[], int size);
-extern float getAverage(int dataRaw[], int size);
+extern float getAverage(float *data, int size);
 
 /* TASKs Declarations */
 DeclareTask(DetectTask);
@@ -299,7 +300,7 @@ float getLux(int dataRaw) {
   ldrResistance =
       ldrVoltage / resistorVoltage * REF_RESISTANCE; // REF_RESISTANCE is 5 kohm
   return LUX_CALC_SCALAR * pow(ldrResistance, LUX_CALC_EXPONENT);
-} /* extern "C" */
+}
 
 // Function to get average of the moving average array
 float getAverage(float *data, int size) {
@@ -311,7 +312,7 @@ float getAverage(float *data, int size) {
 }
 
 // Function to populate the moving average array
-void populateMovingAverage(int *maIndex, float *maRaw, float *maLux,
+void populateMovingAverage(int *maIndex, int *maRaw, float *maLux,
                            int LDR_PIN) {
   if (*maIndex < MOVING_AVERAGE_SIZE) {
     // populate moving average

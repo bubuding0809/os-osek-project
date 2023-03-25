@@ -77,19 +77,18 @@ AppModeType startupmode; /* OSEE - Type defined AppMode from OSEE */
 OsEE_addr volatile main_sp;
 
 /* Macro for OSEE Debugging only */
-#define OSEE_BREAK_POINT()
-do {
-  cli();
-  serial_print("Test Failed!!!, line:" OSEE_S(__LINE__) " \r\n");
-  while (1) {
-    if (serialEventRun)
-      serialEventRun();
-  }
-} while (0)
+#define OSEE_BREAK_POINT()                                                     \
+  do {                                                                         \
+    cli();                                                                     \
+    serial_print("Test Failed!!!, line:" OSEE_S(__LINE__) " \r\n");            \
+    while (1) {                                                                \
+      if (serialEventRun)                                                      \
+        serialEventRun();                                                      \
+    }                                                                          \
+  } while (0)
 
-    void
-    StartupHook(void) { /* User defined pin declaration */
-                        /* Empty Functions */
+void StartupHook(void) { /* User defined pin declaration */
+                         /* Empty Functions */
   int button_state;
 
   /* initialize the digital pins using arduino functions */
