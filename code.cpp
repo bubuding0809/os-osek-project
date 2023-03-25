@@ -77,17 +77,22 @@ AppModeType startupmode; /* OSEE - Type defined AppMode from OSEE */
 OsEE_addr volatile main_sp;
 
 /* Macro for OSEE Debugging only */
-#define OSEE_BREAK_POINT()                                                     \
-  do {                                                                         \
-    cli();                                                                     \
-    serial_print("Test Failed!!!, line:" OSEE_S(__LINE__) " \r\n");            \
-    while (1) {                                                                \
-      if (serialEventRun)                                                      \
-        serialEventRun();                                                      \
-    }                                                                          \
-  } while (0)
+#define OSEE_BREAK_POINT()
+do {
+  cli();
+  serial_print("Test Failed!!!, line:" OSEE_S(__LINE__) " \r\n");
+  while (1) {
+    if (serialEventRun)
+      serialEventRun();
+  }
+} while (0)
 
-void StartupHook(void) {
+    void
+    StartupHook(void) { /* User defined pin declaration */
+                        /* Empty Functions */
+  int button_state;
+
+  /* initialize the digital pins using arduino functions */
   // East and West Servo
   eastServo.attach(EASTSERVO);  // Attach east servo to pin
   eastServo.write(EASTSERVO_0); // Set servo to default state of contracted
@@ -100,18 +105,16 @@ void StartupHook(void) {
   lcd.createChar(CUSTOMCHAR1, mapChar1); // Create custom character
   lcd.clear();
 
-  /* Initialize the digital pins using arduino functions */
-  pinMode(EASTDETECT, INPUT); // ADC Input for east LDR
-  pinMode(WESTDETECT, INPUT); // ADC Input for west LDR
-  pinMode(EASTLIGHT, OUTPUT); // Output for east LED
-  pinMode(WESTLIGHT, OUTPUT); // Output for west LED
-
-  // Set default LED output as LOW
+  // Light Sensor and LED
+  pinMode(EASTDETECT, INPUT);   // ADC Input for east LDR
+  pinMode(WESTDETECT, INPUT);   // ADC Input for west LDR
+  pinMode(EASTLIGHT, OUTPUT);   // Output for east LED
+  pinMode(WESTLIGHT, OUTPUT);   // Output for west LED
   digitalWrite(EASTLIGHT, LOW); // Set default LIGHT as low
   digitalWrite(WESTLIGHT, LOW); // Set default LIGHT as low
 
-  /* Arduino has no API to change the INTO edge without re-init INT functionname
-   * again" */
+  /* Arduino has no API to change the INTO edge without re-init INT function
+   * name again" */
   /* attachInterrupt(digitalPinToInterrupt(button), ButtonISR, FALLING); */
   /* Use direct register configuration
    * 	External Interrupt Control Register A
@@ -157,7 +160,6 @@ void StartupHook(void) {
   EICRA |= (1 << ISC01); /* Trigger INT0 on falling edge */
   EIMSK |= (1 << INT0);  /* Enable external interrupt INT0 */
 
-  /* Initialize serial communcation*/
   Serial.begin(115200);
   Serial.println("My Shade Controller!");
 }
@@ -183,10 +185,9 @@ void idle_hook(void) {
 void setup(void) {}
 
 void ErrorHook(StatusType Error) {
-  // Get the service that caused the error
-  OSServiceIdType callee = OSErrorGetServiceId();
+  OSServiceIdType callee;
 
-  // Switch statement to conditionally handle the error
+  callee = OSErrorGetServiceId();
   switch (Error) {
   case E_OS_ACCESS:
     /* Handle error then return. */
@@ -247,8 +248,8 @@ void ErrorHook(StatusType Error) {
 
 int main(void) {
 
-  // Initialize the Arduino
   init();
+
   setup();
 
 #if defined(USBCON)
