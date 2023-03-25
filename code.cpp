@@ -87,80 +87,79 @@ OsEE_addr volatile main_sp;
     }                                                                          \
   } while (0)
 
-void StartupHook(void) { /* User defined pin declaration */
-                         /* Empty Functions */
-	int button_state;
+void StartupHook(void) {
+  // East and West Servo
+  eastServo.attach(EASTSERVO);  // Attach east servo to pin
+  eastServo.write(EASTSERVO_0); // Set servo to default state of contracted
 
-	  /* initialize the digital pins using arduino functions */
-	  // East and West Servo
-	  eastServo.attach(EASTSERVO);  // Attach east servo to pin
-	  eastServo.write(EASTSERVO_0); // Set servo to default state of contracted
+  westServo.attach(WESTSERVO);
+  westServo.write(WESTSERVO_0);
 
-	  westServo.attach(WESTSERVO);
-	  westServo.write(WESTSERVO_0);
+  // LCD
+  lcd.begin(LCD_COL, LCD_ROW);           // Initialize LCD
+  lcd.createChar(CUSTOMCHAR1, mapChar1); // Create custom character
+  lcd.clear();
 
-	  // LCD
-	  lcd.begin(LCD_COL, LCD_ROW);           // Initialize LCD
-	  lcd.createChar(CUSTOMCHAR1, mapChar1); // Create custom character
-	  lcd.clear();
+  /* Initialize the digital pins using arduino functions */
+  pinMode(EASTDETECT, INPUT); // ADC Input for east LDR
+  pinMode(WESTDETECT, INPUT); // ADC Input for west LDR
+  pinMode(EASTLIGHT, OUTPUT); // Output for east LED
+  pinMode(WESTLIGHT, OUTPUT); // Output for west LED
 
-	  // Light Sensor and LED
-	  pinMode(EASTDETECT, INPUT);   // ADC Input for east LDR
-	  pinMode(WESTDETECT, INPUT);   // ADC Input for west LDR
-	  pinMode(EASTLIGHT, OUTPUT);   // Output for east LED
-	  pinMode(WESTLIGHT, OUTPUT);   // Output for west LED
-	  digitalWrite(EASTLIGHT, LOW); // Set default LIGHT as low
-	  digitalWrite(WESTLIGHT, LOW); // Set default LIGHT as low
+  // Set default LED output as LOW
+  digitalWrite(EASTLIGHT, LOW); // Set default LIGHT as low
+  digitalWrite(WESTLIGHT, LOW); // Set default LIGHT as low
 
-	  /* Arduino has no API to change the INTO edge without re-init INT function
-	   * name again" */
-	  /* attachInterrupt(digitalPinToInterrupt(button), ButtonISR, FALLING); */
-	  /* Use direct register configuration
-	   * 	External Interrupt Control Register A
-	   *	Bits		7 	6 	5	4	3		2
-	   *1
-	   *0
-	   *	EICRA		-	-	-	-	ISC11	ISC10	ISC01
-	   *ISC00
-	   *
-	   *		ISC Bit Settings
-	   *		ISCx1	ISCx0	DESCRIPTION
-	   *			0		0	Low level of INTx generates an
-	   *interrupt
-	   *request
-	   *			0		1	Any logic change on INTx
-	   *generates
-	   *an
-	   *interrupt
-	   *request
-	   *			1		0	The falling edge of INTx
-	   *generates
-	   *an
-	   *interrupt
-	   *request
-	   *			1		1	The rising edge of INTx
-	   *generates
-	   *an
-	   *interrupt
-	   *request
-	   *
-	   *	External Interrupt Mask Register
-	   *	Bits		7 	6 	5	4	3	2	1
-	   *0
-	   *	EIMSK		-	-	-	-	-	-	INT1
-	   *INT0
-	   *
-	   *	External Interrupt Flag Register
-	   *	Bits		7 	6 	5	4	3	2	1
-	   *0
-	   *  EIFR		-	-	-	-	-	-	INTF1
-	   *INTF0
-	   */
-	  EICRA |= (1 << ISC01); /* Trigger INT0 on falling edge */
-	  EIMSK |= (1 << INT0);  /* Enable external interrupt INT0 */
+  /* Arduino has no API to change the INTO edge without re-init INT functionname
+   * again" */
+  /* attachInterrupt(digitalPinToInterrupt(button), ButtonISR, FALLING); */
+  /* Use direct register configuration
+   * 	External Interrupt Control Register A
+   *	Bits		7 	6 	5	4	3		2
+   *1
+   *0
+   *	EICRA		-	-	-	-	ISC11	ISC10	ISC01
+   *ISC00
+   *
+   *		ISC Bit Settings
+   *		ISCx1	ISCx0	DESCRIPTION
+   *			0		0	Low level of INTx generates an
+   *interrupt
+   *request
+   *			0		1	Any logic change on INTx
+   *generates
+   *an
+   *interrupt
+   *request
+   *			1		0	The falling edge of INTx
+   *generates
+   *an
+   *interrupt
+   *request
+   *			1		1	The rising edge of INTx
+   *generates
+   *an
+   *interrupt
+   *request
+   *
+   *	External Interrupt Mask Register
+   *	Bits		7 	6 	5	4	3	2	1
+   *0
+   *	EIMSK		-	-	-	-	-	-	INT1
+   *INT0
+   *
+   *	External Interrupt Flag Register
+   *	Bits		7 	6 	5	4	3	2	1
+   *0
+   *  EIFR		-	-	-	-	-	-	INTF1
+   *INTF0
+   */
+  EICRA |= (1 << ISC01); /* Trigger INT0 on falling edge */
+  EIMSK |= (1 << INT0);  /* Enable external interrupt INT0 */
 
-	  Serial.begin(115200);
-	  Serial.println("My Shade Controller!");
+  /* Initialize serial communcation*/
+  Serial.begin(115200);
+  Serial.println("My Shade Controller!");
 }
 
 void idle_hook(void) {
@@ -181,15 +180,13 @@ void idle_hook(void) {
   counter++;
 }
 
-void setup(void) {
-
-
-}
+void setup(void) {}
 
 void ErrorHook(StatusType Error) {
-  OSServiceIdType callee;
+  // Get the service that caused the error
+  OSServiceIdType callee = OSErrorGetServiceId();
 
-  callee = OSErrorGetServiceId();
+  // Switch statement to conditionally handle the error
   switch (Error) {
   case E_OS_ACCESS:
     /* Handle error then return. */
@@ -250,14 +247,13 @@ void ErrorHook(StatusType Error) {
 
 int main(void) {
 
+  // Initialize the Arduino
   init();
-
   setup();
 
 #if defined(USBCON)
   USBDevice.attach();
 #endif
-
 
   StartOS(OSDEFAULTAPPMODE); /* OSEE - OSEK init */
 

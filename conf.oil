@@ -92,7 +92,6 @@ CPU mySystem {
 
   };
 
-  
   APPDATA myApp {
     APP_SRC  = "code.cpp";			/* startup OSEE */
     APP_SRC  = "task.cpp";			/* task file */
@@ -101,6 +100,9 @@ CPU mySystem {
     APP_SRC  = "LiquidCrystal.cpp"; /* LCD Driver file */
   };
 
+  // DetectTask handles the reading of the LDRs and converts the analog value to a digital lux value
+  // The lux values is then used to determine the state of the LED and the motor
+  // In addition, the system time is also checked to determine if the LED should be toggled
   TASK DetectTask {
     PRIORITY = 1;				
     SCHEDULE = FULL;
@@ -109,6 +111,8 @@ CPU mySystem {
     ACTIVATION = 2;
   };
 
+  // DisplayTask handles the display of the digital lux values,
+  // LED state, motor state, and time on the LCD
   TASK DisplayTask {
     PRIORITY = 1;				
     SCHEDULE = FULL;
@@ -116,31 +120,9 @@ CPU mySystem {
     STACK = SHARED;
     ACTIVATION = 2;
   };
-  
-  TASK ToggleEastServoTask {
-  	PRIORITY = 2;
-  	SCHEDULE = FULL;
-  	AUTOSTART = FALSE;
-  	STACK = SHARED;
-  	ACTIVATION = 1;
-  };
-  
-  TASK ToggleWestServoTask {
-  	PRIORITY = 2;
-  	SCHEDULE = FULL;
-  	AUTOSTART = FALSE;
-  	STACK = SHARED;
-  	ACTIVATION = 1;
-  };
-  
-  TASK ClockTask {
-  	PRIORITY = 3;
-  	SCHEDULE = NON;
-  	AUTOSTART = TRUE;
-  	STACK = SHARED;
-  	ACTIVATION = 1;
-  };
 
+  // ToggleServoTask handles the toggling of the servo motors for the east and west
+  // This task is synchronized and activated by the events EastServoEvent and WestServoEvent
   TASK ToggleServoTask {
     PRIORITY = 2;
     SCHEDULE = FULL;
@@ -152,11 +134,23 @@ CPU mySystem {
     EVENT = EastServoEvent;
     EVENT = WestServoEvent;
   };
+  
+  // ClockTask handles the incrementing of the time and the toggling of the LED
+  TASK ClockTask {
+  	PRIORITY = 3;
+  	SCHEDULE = NON;
+  	AUTOSTART = TRUE;
+  	STACK = SHARED;
+  	ACTIVATION = 1;
+  };
 
-    /* EVENT Declaration */
+
+  /* EVENT Declaration */
   EVENT EastServoEvent { MASK = AUTO; };
   EVENT WestServoEvent { MASK = AUTO; };
 
+
+  /* System counter and alarms */
   COUNTER  SystemTimer {
     MINCYCLE = 1;
     MAXALLOWEDVALUE = 65535;

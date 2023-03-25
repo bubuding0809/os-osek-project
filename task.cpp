@@ -65,19 +65,20 @@
 extern "C" {
 
 /* External Functions */
-extern void long_operation(int led_buf);
 extern void serial_print(char const *msg);
 extern float getLux(int dataRaw);
+extern float calculateMovingAverage(float dataRaw[], int size);
+extern float getAverage(int dataRaw[], int size);
 
 /* TASKs Declarations */
 DeclareTask(DetectTask);
 DeclareTask(DisplayTask);
-DeclareTask(ToggleEastServoTask);
-DeclareTask(ToggleWestServoTask);
 DeclareTask(ToggleServoTask);
 DeclareTask(ClockTask);
 
 /* My event Declaration */
+DeclareEvent(EastServoEvent);
+DeclareEvent(WestServoEvent);
 
 /* My Variables */
 // User configuration for Light Intensity
@@ -88,6 +89,7 @@ DeclareTask(ClockTask);
 #define REF_RESISTANCE (5000)        /* 5KOhm Resistor used in circuit */
 #define LUX_CALC_SCALAR (889985.88)  /* Lux Scalar */
 #define LUX_CALC_EXPONENT (-1.16552) /* Lux Exponent */
+#define MOVING_AVERAGE_SIZE (3)      /* Moving Average Size */
 
 // defines variables
 ServoTimer2 eastServo;
@@ -95,15 +97,22 @@ ServoTimer2 westServo;
 LiquidCrystal lcd(RS, EN, D4, D5, D6,
                   D7); // LCD - Construct lcd object, pins see hw_pins.h
 
+// Initialize moving average array for east and west
 int dataRawEast[3] = {-2000, -2000, -2000};
-int dataRawWest[3] = {-2000,-2000,-2000};
-float dataLuxEast[3] = {0,0, 0};
-float dataLuxWest[3] = {0,0, 0};
+int dataRawWest[3] = {-2000, -2000, -2000};
+float dataLuxEast[3] = {0, 0, 0};
+float dataLuxWest[3] = {0, 0, 0};
+
+// Initialize the moving average value for east and west
 float avgEast = 0;
 float avgWest = 0;
+
+// Initialize the east and west servo states
 bool eastContracted = false;
 bool westContracted = false;
-int countEast = 0, countWest =0;
+
+// Initialize the index for moving average
+int countEast = 0, countWest = 0;
 
 // 24Hr clock
 int hour = 07;
@@ -111,6 +120,23 @@ int minute = 20;
 int second = 55;
 bool isNewTime = false;
 
+/*************************************************************
+ *  \Function	DetectTask
+ *  \brief		This task starts at MM ms and repeat at NN ms.
+ *  			It contains 2 operations, namely,
+ *  			shade operation and street light operation.
+ *
+ *  			For shade operation, it collects raw data from sensory
+ *circuit,
+ *              After getting the data, it converts raw data to LUX data.
+ *              The LUX data is used to decide to contract or expand
+ *              shade controller (servo-motor).
+ *
+ *              For clock operation, it operates as 24Hr clock operation.
+ *              It uses clock time to decide to switch on/off
+ *              the street light.
+ *
+ *************************************************************/
 TASK(ClockTask) {
   second++;
   if (second == 60) {
@@ -135,67 +161,58 @@ TASK(ClockTask) {
  *
  *  			For shade operation, it collects raw data from sensory
  *circuit,
-*              After getting the data, it converts raw data to LUX data.
-*              The LUX data is used to decide to contract or expand
-*              shade controller (servo-motor).
-*
-*              For clock operation, it operates as 24Hr clock operation.
-*              It uses clock time to decide to switch on/off
-*              the street light.
-*
-*************************************************************/
+ *              After getting the data, it converts raw data to LUX data.
+ *              The LUX data is used to decide to contract or expand
+ *              shade controller (servo-motor).
+ *
+ *              For clock operation, it operates as 24Hr clock operation.
+ *              It uses clock time to decide to switch on/off
+ *              the street light.
+ *
+ *************************************************************/
 TASK(DetectTask) {
-  //	EventMaskType mask;
-
-  float resistorVoltage;
-  float ldrVoltage;
-  float ldrResistance;
-
-
-  // read in LDR voltage from analog pins for East and West
+  /* read in LDR voltage from analog pins for East and West */
   // Convert raw data to lux
-  if (countEast<=3) {
-	  Serial.print("East RAW data:");
-	  Serial.println(dataRawEast[countEast]);
-	  dataRawEast[countEast] = analogRead(EASTDETECT); // East analog
-	  dataLuxEast[countEast] = getLux(dataRawEast[countEast]); // East digital
-	  Serial.print("East data:");
-	  Serial.println(dataLuxEast[countEast]);
-	  countEast++;
+  if (countEast <= MOVING_AVERAGE_SIZE) {
+    Serial.print("East RAW data:");
+    Serial.println(dataRawEast[countEast]);
+    dataRawEast[countEast] = analogRead(EASTDETECT);         // East analog
+    dataLuxEast[countEast] = getLux(dataRawEast[countEast]); // East digital
+    Serial.print("East data:");
+    Serial.println(dataLuxEast[countEast]);
+    countEast++;
   }
+
+  avgEast = getAverage(dataLuxEast, MOVING_AVERAGE_SIZE);
+  Serial.print("Avg east lux: " + String(avgEast));
+
+  if (countEast == MOVING_AVERAGE_SIZE) {
+    countEast = 0;
+  }
+
   // Convert raw data to lux
-  if (countWest <= 3) {
-	  Serial.print("West RAW data:");
-	  Serial.println(dataRawWest[countWest]);
-	  dataRawWest[countWest] = analogRead(WESTDETECT); // West analog
+  if (countWest <= MOVING_AVERAGE_SIZE) {
+    Serial.print("West RAW data:");
+    Serial.println(dataRawWest[countWest]);
+    dataRawWest[countWest] = analogRead(WESTDETECT); // West analog
 
-	  dataLuxWest[countWest] = getLux(dataRawWest[countWest]); // West digital
-	  Serial.print("West data:");
-	  Serial.println(dataLuxWest[countWest]);
-	  countWest++;
+    dataLuxWest[countWest] = getLux(dataRawWest[countWest]); // West digital
+    Serial.print("West data:");
+    Serial.println(dataLuxWest[countWest]);
+    countWest++;
   }
 
+  avgWest = getAverage(dataLuxWest, MOVING_AVERAGE_SIZE);
+  Serial.println("Avg west lux: " + String(avgWest));
 
-  avgEast = (dataLuxEast[0]+dataLuxEast[1]+dataLuxEast[2])/3;
-  Serial.print("Avg east lux: ");
-  Serial.println(avgEast);
-  avgWest = (dataLuxWest[0]+dataLuxWest[1]+dataLuxWest[2])/3;
-  Serial.print("Avg west lux: ");
-  Serial.println(avgWest);
-
-  if (countEast == 3){
-	  countEast = 0;
+  if (countWest == MOVING_AVERAGE_SIZE) {
+    countWest = 0;
   }
-
-  if (countWest == 3){
- 	  countWest = 0;
-   }
 
   // Street light operation based on clock time during the night
   if ((hour >= 18 && minute >= 30) || (hour <= 7 && minute < 30)) {
-      digitalWrite(EASTLIGHT, HIGH);
-      digitalWrite(WESTLIGHT, HIGH);
-
+    digitalWrite(EASTLIGHT, HIGH);
+    digitalWrite(WESTLIGHT, HIGH);
 
   } else if (hour >= 7 && minute >= 30) {
     // Normal street light operation based on LUX data
@@ -214,68 +231,37 @@ TASK(DetectTask) {
 
   // Shade operation
   if (avgEast < 500 && !eastContracted) {
-//    ActivateTask(ToggleEastServoTask);
-	  SetEvent(ToggleServoTask, EastServoEvent);
+    SetEvent(ToggleServoTask, EastServoEvent);
   } else if (avgEast >= 500 && eastContracted) {
-//	  ActivateTask(ToggleEastServoTask);
-	  SetEvent(ToggleServoTask, EastServoEvent);
+    SetEvent(ToggleServoTask, EastServoEvent);
   }
 
   if (avgWest < 500 && !westContracted) {
-//    ActivateTask(ToggleWestServoTask);
-	  SetEvent(ToggleServoTask, WestServoEvent);
+    SetEvent(ToggleServoTask, WestServoEvent);
   } else if (avgWest >= 500 && westContracted) {
-//    ActivateTask(ToggleWestServoTask);
-	  SetEvent(ToggleServoTask, WestServoEvent);
+    SetEvent(ToggleServoTask, WestServoEvent);
   }
 
   TerminateTask();
 }
 
-TASK(ToggleEastServoTask) {
-  if (eastContracted) {
-    Serial.println("Opening East blinds");
-
-    // SERVO GOES between here
-    eastServo.write(EASTSERVO_180);
-    // SERVO GOES between here
-
-    Serial.println("Opened East blinds");
-    eastContracted = !eastContracted;
-  } else {
-    Serial.println("Contracting East blinds");
-
-    // SERVO GOES between here
-    eastServo.write(EASTSERVO_0);
-    // SERVO GOES between here
-
-    Serial.println("Contracted East blinds");
-    eastContracted = !eastContracted;
-  }
-}
-
-TASK(ToggleWestServoTask) {
-  if (westContracted) {
-    Serial.println("Opening West blinds");
-
-    // SERVO GOES between here
-    westServo.write(WESTSERVO_180);
-    // SERVO GOES between here
-
-    Serial.println("Opened West blinds");
-    westContracted = !westContracted;
-  } else {
-    Serial.println("Contracting West blinds");
-
-    // SERVO GOES between here
-    westServo.write(WESTSERVO_0);
-    // SERVO GOES between here
-
-    Serial.println("Contracted East blinds");
-    westContracted = !westContracted;
-  }
-}
-
+/*************************************************************
+ *  \Function	DetectTask
+ *  \brief		This task starts at MM ms and repeat at NN ms.
+ *  			It contains 2 operations, namely,
+ *  			shade operation and street light operation.
+ *
+ *  			For shade operation, it collects raw data from sensory
+ *circuit,
+ *              After getting the data, it converts raw data to LUX data.
+ *              The LUX data is used to decide to contract or expand
+ *              shade controller (servo-motor).
+ *
+ *              For clock operation, it operates as 24Hr clock operation.
+ *              It uses clock time to decide to switch on/off
+ *              the street light.
+ *
+ *************************************************************/
 TASK(ToggleServoTask) {
   EventMaskType mask;
 
@@ -335,6 +321,7 @@ TASK(ToggleServoTask) {
 
   TerminateTask();
 }
+
 /*************************************************************
  *  \Function	DisplayTask
  *  \brief		This task starts at MM ms and repeat at NN ms.
@@ -376,14 +363,23 @@ TASK(DisplayTask) {
   TerminateTask();
 }
 
-/* Test function for leds*/
-void long_operation(int led_buf) {
-  //  digitalWrite(led_buf, HIGH);
-  delay(500);
-  digitalWrite(led_buf, LOW);
-  delay(500);
-}
-
+/*************************************************************
+ *  \Function	DetectTask
+ *  \brief		This task starts at MM ms and repeat at NN ms.
+ *  			It contains 2 operations, namely,
+ *  			shade operation and street light operation.
+ *
+ *  			For shade operation, it collects raw data from sensory
+ *circuit,
+ *              After getting the data, it converts raw data to LUX data.
+ *              The LUX data is used to decide to contract or expand
+ *              shade controller (servo-motor).
+ *
+ *              For clock operation, it operates as 24Hr clock operation.
+ *              It uses clock time to decide to switch on/off
+ *              the street light.
+ *
+ *************************************************************/
 float getLux(int dataRaw) {
   float resistorVoltage;
   float ldrVoltage;
@@ -396,4 +392,14 @@ float getLux(int dataRaw) {
       ldrVoltage / resistorVoltage * REF_RESISTANCE; // REF_RESISTANCE is 5 kohm
   return LUX_CALC_SCALAR * pow(ldrResistance, LUX_CALC_EXPONENT);
 } /* extern "C" */
+
+float getAverage(float *data, int size) {
+  float sum = 0;
+  for (int i = 0; i < size; i++) {
+    sum += data[i];
+  }
+  return sum / size;
+}
+
+// End of extern c
 }
