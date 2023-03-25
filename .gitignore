@@ -1,2 +1,5 @@
 /erika/
 /out/
+
+# Ignore vscode files
+.vscode/
